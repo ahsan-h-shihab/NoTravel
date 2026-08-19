@@ -4,11 +4,7 @@ Reproduction artifact for *"The Operating Point Does Not Travel: Cross-Lingual T
 Transfer Fails by Over- and Under-Firing in Multilingual Text Classifiers"* (submitted to
 IEEE Access).
 
-Everything needed to regenerate and independently verify every numerical result, statistical
-test and figure reported in the paper. CPU-only; no GPU, no LaTeX, no paid API.
-
-The manuscript source and PDF are not published here before publication. Nothing in the
-reproduction pipeline depends on them.
+CPU-only; no GPU, no LaTeX, no paid API.
 
 ## Reproduce
 
