@@ -9,7 +9,7 @@ listed under "Our own work" and never to anything in this file.
 
 ---
 
-## Retained in the public repository
+## Referenced by the public pipeline, not redistributed
 
 | Path | Upstream | Terms | Redistribution | Modified by us | Needed to reproduce |
 |---|---|---|---|---|---|
