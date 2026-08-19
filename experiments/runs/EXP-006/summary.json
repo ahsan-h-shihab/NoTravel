@@ -1,0 +1,158 @@
+{
+  "exp_id": "EXP-006",
+  "task": "sib200",
+  "encoder": "encoder_minilm",
+  "source_language": "eng_Latn",
+  "objective": "target_fpr",
+  "target_fpr": 0.05,
+  "n_languages": 174,
+  "source_dev_auroc": 0.9874,
+  "head_train_prior": 0.1178,
+  "tau_source": 0.1717,
+  "median_test_auroc": 0.884,
+  "n_degenerate_rows": 113,
+  "degenerate_by_strategy": {
+    "bbse": 16,
+    "few_label_128_strat": 1,
+    "few_label_64_rand": 1,
+    "fixed_half": 35,
+    "sld_em": 53,
+    "source_global": 7
+  },
+  "headline_metric": "FPR-budget compliance and recall at FPR<=0.05",
+  "by_strategy": {
+    "bbse": {
+      "budget_violation_rate": 0.3642,
+      "median_fpr": 0.0377,
+      "max_fpr": 0.2203,
+      "median_recall": 0.4688,
+      "n_degenerate": 16
+    },
+    "few_label_128_rand": {
+      "budget_violation_rate": 0.2659,
+      "median_fpr": 0.0372,
+      "max_fpr": 0.1033,
+      "median_recall": 0.5424,
+      "n_degenerate": 0
+    },
+    "few_label_128_strat": {
+      "budget_violation_rate": 0.3468,
+      "median_fpr": 0.0418,
+      "max_fpr": 0.1036,
+      "median_recall": 0.5552,
+      "n_degenerate": 1
+    },
+    "few_label_16_rand": {
+      "budget_violation_rate": 0.185,
+      "median_fpr": 0.0308,
+      "max_fpr": 0.0883,
+      "median_recall": 0.451,
+      "n_degenerate": 0
+    },
+    "few_label_16_strat": {
+      "budget_violation_rate": 0.6301,
+      "median_fpr": 0.064,
+      "max_fpr": 0.1471,
+      "median_recall": 0.5333,
+      "n_degenerate": 0
+    },
+    "few_label_256_rand": {
+      "budget_violation_rate": 0.3815,
+      "median_fpr": 0.0413,
+      "max_fpr": 0.1125,
+      "median_recall": 0.5517,
+      "n_degenerate": 0
+    },
+    "few_label_256_strat": {
+      "budget_violation_rate": 0.3815,
+      "median_fpr": 0.0413,
+      "max_fpr": 0.1125,
+      "median_recall": 0.5517,
+      "n_degenerate": 0
+    },
+    "few_label_32_rand": {
+      "budget_violation_rate": 0.1214,
+      "median_fpr": 0.0315,
+      "max_fpr": 0.105,
+      "median_recall": 0.4579,
+      "n_degenerate": 0
+    },
+    "few_label_32_strat": {
+      "budget_violation_rate": 0.237,
+      "median_fpr": 0.037,
+      "max_fpr": 0.1077,
+      "median_recall": 0.456,
+      "n_degenerate": 0
+    },
+    "few_label_64_rand": {
+      "budget_violation_rate": 0.1329,
+      "median_fpr": 0.0329,
+      "max_fpr": 0.0953,
+      "median_recall": 0.4815,
+      "n_degenerate": 1
+    },
+    "few_label_64_strat": {
+      "budget_violation_rate": 0.4451,
+      "median_fpr": 0.0477,
+      "max_fpr": 0.1291,
+      "median_recall": 0.5533,
+      "n_degenerate": 0
+    },
+    "few_label_8_rand": {
+      "budget_violation_rate": 0.4624,
+      "median_fpr": 0.0465,
+      "max_fpr": 0.1349,
+      "median_recall": 0.5042,
+      "n_degenerate": 0
+    },
+    "few_label_8_strat": {
+      "budget_violation_rate": 0.6936,
+      "median_fpr": 0.0933,
+      "max_fpr": 0.2126,
+      "median_recall": 0.5825,
+      "n_degenerate": 0
+    },
+    "fixed_half": {
+      "budget_violation_rate": 0.0058,
+      "median_fpr": 0.0082,
+      "max_fpr": 0.0593,
+      "median_recall": 0.3438,
+      "n_degenerate": 35
+    },
+    "quantile_match": {
+      "budget_violation_rate": 0.5954,
+      "median_fpr": 0.062,
+      "max_fpr": 0.1612,
+      "median_recall": 0.5862,
+      "n_degenerate": 0
+    },
+    "sld_em": {
+      "budget_violation_rate": 0.422,
+      "median_fpr": 0.0295,
+      "max_fpr": 0.2034,
+      "median_recall": 0.5152,
+      "n_degenerate": 53
+    },
+    "source_global": {
+      "budget_violation_rate": 0.3179,
+      "median_fpr": 0.0372,
+      "max_fpr": 0.1271,
+      "median_recall": 0.5312,
+      "n_degenerate": 7
+    },
+    "target_full": {
+      "budget_violation_rate": 0.3757,
+      "median_fpr": 0.0413,
+      "max_fpr": 0.1125,
+      "median_recall": 0.5517,
+      "n_degenerate": 0
+    },
+    "test_oracle_unachievable": {
+      "budget_violation_rate": 0.0,
+      "median_fpr": 0.042,
+      "max_fpr": 0.05,
+      "median_recall": 0.5556,
+      "n_degenerate": 0
+    }
+  }
+}

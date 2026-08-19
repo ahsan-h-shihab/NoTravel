@@ -1,0 +1,47 @@
+# Scientifically load-bearing dependencies, pinned exactly.
+#
+# Policy (configuration management, reproducibility):
+# these are the packages whose versions can plausibly change a reported number.
+# Versions are the ones VERIFIED present on the reference machine on 2026-08-02 and
+# recorded in environment/environment_snapshot.json.
+#
+# CPU-ONLY IS A HARD PROJECT CONSTRAINT. Install torch from the CPU index:
+#   pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+# then:
+#   pip install -r environment/requirements.txt
+
+# --- numerics / data ---
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+pyarrow==24.0.0
+
+# --- classical ML & statistics ---
+scikit-learn==1.4.2
+statsmodels==0.14.6
+
+# --- deep learning (CPU build) ---
+torch==2.10.0
+
+# --- NLP stack ---
+transformers==4.57.1
+tokenizers==0.22.1
+datasets==5.0.0
+huggingface-hub==0.35.3
+sentence-transformers==5.1.1
+nltk==3.9.2
+# REQUIRED, not optional: without sentencepiece, XLM-R-based classifiers fail with
+# "Converting from SentencePiece and Tiktoken failed". This silently removed an Arm-A
+# classifier from the feasibility probe until it was diagnosed.
+sentencepiece==0.2.2
+
+# --- configuration / testing ---
+PyYAML==6.0.3
+pytest>=8.0
+
+# --- plotting ---
+matplotlib==3.10.9
+seaborn==0.13.2
+
+# --- utilities ---
+tqdm==4.67.3

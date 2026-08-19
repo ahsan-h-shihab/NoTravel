@@ -1,0 +1,311 @@
+{
+  "source": {
+    "distilbert": "results/tables/EXP-008-citizenlab_arm_a.csv",
+    "xlmr": "results/tables/EXP-009_arm_a.csv"
+  },
+  "analysis_type": "re-analysis of preserved results; no new experiment",
+  "budget": 0.05,
+  "distilbert": {
+    "n_target_languages": 14,
+    "source_language": "en",
+    "source_auroc": 0.9252,
+    "source_recall": 0.7287,
+    "source_fpr": 0.051383,
+    "violation_rate": 0.2143,
+    "n_violators": 3,
+    "median_over_budget_multiple": 0.3287,
+    "median_recall": 0.0469,
+    "median_auroc": 0.6415,
+    "min_recall": 0.0014,
+    "min_recall_language": "am",
+    "strongest_target_language": "fr",
+    "strongest_target_auroc": 0.9244,
+    "strongest_target_violates": false,
+    "strongest_target_multiple": 0.2062,
+    "auroc_ranking": [
+      {
+        "rank": 1,
+        "language": "fr",
+        "auroc": 0.9244,
+        "multiple": 0.2062,
+        "violates": false
+      },
+      {
+        "rank": 2,
+        "language": "es",
+        "auroc": 0.7883,
+        "multiple": 0.6053,
+        "violates": false
+      },
+      {
+        "rank": 3,
+        "language": "hi",
+        "auroc": 0.7528,
+        "multiple": 0.0267,
+        "violates": false
+      },
+      {
+        "rank": 4,
+        "language": "de",
+        "auroc": 0.7357,
+        "multiple": 1.4362,
+        "violates": true
+      },
+      {
+        "rank": 5,
+        "language": "ru",
+        "auroc": 0.7204,
+        "multiple": 0.3417,
+        "violates": false
+      },
+      {
+        "rank": 6,
+        "language": "it",
+        "auroc": 0.7188,
+        "multiple": 2.1875,
+        "violates": true
+      },
+      {
+        "rank": 7,
+        "language": "zh",
+        "auroc": 0.6438,
+        "multiple": 0.2653,
+        "violates": false
+      },
+      {
+        "rank": 8,
+        "language": "uk",
+        "auroc": 0.6391,
+        "multiple": 0.3158,
+        "violates": false
+      },
+      {
+        "rank": 9,
+        "language": "hin",
+        "auroc": 0.6378,
+        "multiple": 3.2967,
+        "violates": true
+      },
+      {
+        "rank": 10,
+        "language": "ja",
+        "auroc": 0.6307,
+        "multiple": 0.2891,
+        "violates": false
+      },
+      {
+        "rank": 11,
+        "language": "he",
+        "auroc": 0.6247,
+        "multiple": 0.1081,
+        "violates": false
+      },
+      {
+        "rank": 12,
+        "language": "am",
+        "auroc": 0.565,
+        "multiple": 0.051,
+        "violates": false
+      },
+      {
+        "rank": 13,
+        "language": "ar",
+        "auroc": 0.5643,
+        "multiple": 0.4813,
+        "violates": false
+      },
+      {
+        "rank": 14,
+        "language": "tt",
+        "auroc": 0.5569,
+        "multiple": 0.5578,
+        "violates": false
+      }
+    ],
+    "violator_auroc_ranks": [
+      4,
+      6,
+      9
+    ],
+    "best_violator_rank": 4,
+    "top3_all_violate": false,
+    "violators_within_top4": 1,
+    "violators_within_top4_languages": [
+      "de"
+    ]
+  },
+  "xlmr": {
+    "n_target_languages": 14,
+    "source_language": "en",
+    "source_auroc": 0.9944,
+    "source_recall": 0.973,
+    "source_fpr": 0.072464,
+    "violation_rate": 0.6429,
+    "n_violators": 9,
+    "median_over_budget_multiple": 1.8288,
+    "median_recall": 0.2972,
+    "median_auroc": 0.6474,
+    "min_recall": 0.0,
+    "min_recall_language": "ar",
+    "strongest_target_language": "fr",
+    "strongest_target_auroc": 0.989,
+    "strongest_target_violates": false,
+    "strongest_target_multiple": 0.567,
+    "auroc_ranking": [
+      {
+        "rank": 1,
+        "language": "fr",
+        "auroc": 0.989,
+        "multiple": 0.567,
+        "violates": false
+      },
+      {
+        "rank": 2,
+        "language": "es",
+        "auroc": 0.8641,
+        "multiple": 1.7654,
+        "violates": true
+      },
+      {
+        "rank": 3,
+        "language": "it",
+        "auroc": 0.8324,
+        "multiple": 6.7448,
+        "violates": true
+      },
+      {
+        "rank": 4,
+        "language": "ru",
+        "auroc": 0.8256,
+        "multiple": 1.8922,
+        "violates": true
+      },
+      {
+        "rank": 5,
+        "language": "uk",
+        "auroc": 0.6708,
+        "multiple": 2.8684,
+        "violates": true
+      },
+      {
+        "rank": 6,
+        "language": "de",
+        "auroc": 0.6654,
+        "multiple": 0.5585,
+        "violates": false
+      },
+      {
+        "rank": 7,
+        "language": "hin",
+        "auroc": 0.6535,
+        "multiple": 1.6641,
+        "violates": true
+      },
+      {
+        "rank": 8,
+        "language": "hi",
+        "auroc": 0.6413,
+        "multiple": 0.0801,
+        "violates": false
+      },
+      {
+        "rank": 9,
+        "language": "tt",
+        "auroc": 0.6111,
+        "multiple": 5.7105,
+        "violates": true
+      },
+      {
+        "rank": 10,
+        "language": "zh",
+        "auroc": 0.571,
+        "multiple": 2.5199,
+        "violates": true
+      },
+      {
+        "rank": 11,
+        "language": "am",
+        "auroc": 0.5629,
+        "multiple": 7.1939,
+        "violates": true
+      },
+      {
+        "rank": 12,
+        "language": "ja",
+        "auroc": 0.5302,
+        "multiple": 2.5493,
+        "violates": true
+      },
+      {
+        "rank": 13,
+        "language": "he",
+        "auroc": 0.4997,
+        "multiple": 0.8108,
+        "violates": false
+      },
+      {
+        "rank": 14,
+        "language": "ar",
+        "auroc": 0.4432,
+        "multiple": 0.0267,
+        "violates": false
+      }
+    ],
+    "violator_auroc_ranks": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "best_violator_rank": 2,
+    "top3_all_violate": false,
+    "violators_within_top4": 3,
+    "violators_within_top4_languages": [
+      "es",
+      "it",
+      "ru"
+    ]
+  },
+  "distilbert_recall_claim": {
+    "n_target_languages": 14,
+    "n_under_firing": 11,
+    "median_recall_all_targets": 0.0469,
+    "median_missed_fraction_all_targets": 0.9531,
+    "median_recall_under_firing": 0.0268,
+    "median_missed_fraction_under_firing": 0.9732,
+    "n_under_firing_missing_over_99pc": 2,
+    "languages_missing_over_99pc": [
+      "am",
+      "hi"
+    ],
+    "n_under_firing_missing_over_95pc": 7,
+    "worst_case_recall": 0.0014,
+    "worst_case_language": "am",
+    "worst_case_missed_fraction": 0.9986,
+    "claim_over_99pc_holds_for_every_under_firing_language": false
+  },
+  "cross_classifier": {
+    "n_languages": 14,
+    "widest_ratio_language": "am",
+    "widest_ratio_raw": 141.0,
+    "widest_ratio_from_rounded_multiples": 143.8,
+    "widest_multiple_distilbert": 0.051,
+    "widest_multiple_xlmr": 7.1939,
+    "n_sign_disagreements": 8,
+    "sign_disagreement_languages": [
+      "am",
+      "de",
+      "es",
+      "ja",
+      "ru",
+      "tt",
+      "uk",
+      "zh"
+    ]
+  }
+}

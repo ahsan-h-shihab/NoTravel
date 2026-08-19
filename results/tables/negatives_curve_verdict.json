@@ -1,0 +1,19 @@
+{
+  "budget": 0.05,
+  "n_draws_per_language_per_point": 25,
+  "seed": 20260803,
+  "n_grid_points": 8,
+  "violation_rate_min": 0.3097,
+  "violation_rate_max": 0.5294,
+  "spearman_n_neg_vs_violation": {
+    "rho": -0.5,
+    "p": 0.207,
+    "n": 8
+  },
+  "median_violation_when_m_below_10": 0.3956,
+  "median_violation_when_m_at_least_10": NaN,
+  "violation_at_largest_comparable_point": 0.3618,
+  "all_points_below_m10": true,
+  "max_m_reachable_on_this_corpus": 6.4,
+  "monotone_decreasing_in_n_neg": false
+}

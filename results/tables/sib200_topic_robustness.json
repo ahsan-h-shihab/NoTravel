@@ -1,0 +1,72 @@
+{
+  "budget": 0.05,
+  "source": "eng_Latn",
+  "encoder": "encoder_minilm",
+  "seed": 20260802,
+  "topics": [
+    {
+      "positive_topic": "health",
+      "reported_in_paper": true,
+      "n_target_languages": 173,
+      "mean_positive_prevalence": 0.1067,
+      "tau_source": 0.1717,
+      "tau_min": 0.0142,
+      "tau_max": 0.5299,
+      "frac_more_than_0.05_from_source": 0.578,
+      "median_abs_dtau": 0.0629,
+      "median_target_auroc": 0.8872,
+      "min_target_auroc": 0.4421,
+      "max_abs_dtau": 0.3582
+    },
+    {
+      "positive_topic": "science/technology",
+      "reported_in_paper": false,
+      "n_target_languages": 173,
+      "mean_positive_prevalence": 0.2528,
+      "tau_source": 0.3719,
+      "tau_min": 0.1921,
+      "tau_max": 0.9404,
+      "frac_more_than_0.05_from_source": 0.8671,
+      "median_abs_dtau": 0.1798,
+      "median_target_auroc": 0.9141,
+      "min_target_auroc": 0.4337,
+      "max_abs_dtau": 0.5685
+    },
+    {
+      "positive_topic": "politics",
+      "reported_in_paper": false,
+      "n_target_languages": 173,
+      "mean_positive_prevalence": 0.1452,
+      "tau_source": 0.1887,
+      "tau_min": 0.1478,
+      "tau_max": 0.232,
+      "frac_more_than_0.05_from_source": 0.0,
+      "median_abs_dtau": 0.0065,
+      "median_target_auroc": 0.9401,
+      "min_target_auroc": 0.5665,
+      "max_abs_dtau": 0.0433
+    },
+    {
+      "positive_topic": "travel",
+      "reported_in_paper": false,
+      "n_target_languages": 173,
+      "mean_positive_prevalence": 0.2011,
+      "tau_source": 0.5914,
+      "tau_min": 0.0396,
+      "tau_max": 0.7564,
+      "frac_more_than_0.05_from_source": 0.8786,
+      "median_abs_dtau": 0.2169,
+      "median_target_auroc": 0.8398,
+      "min_target_auroc": 0.4597,
+      "max_abs_dtau": 0.5518
+    }
+  ],
+  "frac_diverging_min": 0.0,
+  "frac_diverging_max": 0.8786,
+  "median_abs_dtau_min": 0.0065,
+  "median_abs_dtau_max": 0.2169,
+  "divergence_present_in_every_topic": false,
+  "n_topics_with_divergence": 3,
+  "mean_frac_diverging": 0.5809,
+  "spearman_auroc_vs_median_dtau_across_topics": -0.8
+}

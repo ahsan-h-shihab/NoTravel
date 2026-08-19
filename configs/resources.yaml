@@ -1,0 +1,147 @@
+# ---------------------------------------------------------------------------
+# Pinned scientific resources.
+#
+# Every dataset and model used anywhere in this project is declared here with an
+# explicit revision. Nothing may be loaded without a revision (dataset
+# § REPRODUCIBILITY CONSTITUTION, risk R-05).
+#
+# All SHAs were retrieved from the HuggingFace API on 2026-08-02 and confirmed to
+# resolve. NEVER write a revision from memory or by padding a truncated value --
+# an earlier attempt to do so correctly failed with RevisionNotFoundError and is
+# recorded when the corpus was selected.
+# ---------------------------------------------------------------------------
+
+datasets:
+  toxicity_multilingual:
+    hf_id: textdetox/multilingual_toxicity_dataset
+    revision: "01907546324b0330d2d8b7669648cc18823323e5"
+    task: binary_toxicity
+    role: primary
+    text_column: text
+    label_column: toxic
+    gated: false
+    n_examples: 71374
+    class_balance: "50/50 by construction"
+    languages: [en, ru, uk, de, es, am, zh, ar, hi, it, fr, he, hin, tt, ja]
+    language_notes:
+      high_resource: [en, de, fr, es]
+      mid_resource: [ru, uk, it, ja, zh, ar, hi]
+      low_resource: [am, tt]
+      code_mixed: [hin]
+      other: [he]
+    scripts: [Latin, Cyrillic, Arabic, Hebrew, Devanagari, Han, Geez]
+    provenance: >
+      Compiled for the PAN@CLEF Multilingual Text Detoxification (TextDetox) shared
+      task.
+
+  sib200:
+    hf_id: mteb/sib200
+    revision: "83d0320451aff3cf268beb963bf6b5f2f0bcbc3a"
+    task: topic_classification_binarized_one_vs_rest
+    role: parallel_control
+    gated: false
+    n_language_configs: 206
+    per_language: {train: 701, validation: 99, test: 99, total: 899}
+    labels: [entertainment, geography, health, politics, "science/technology", sports, travel]
+    text_column: text
+    label_column: label
+    parallel_corpus: true
+    # WHY THIS DATASET IS SCIENTIFICALLY LOAD-BEARING:
+    # SIB-200 is built on FLORES-200, so every language contains TRANSLATIONS OF THE SAME
+    # SENTENCES carrying the SAME labels. Content is therefore held constant across
+    # languages. On a non-parallel corpus, a cross-language difference in optimal threshold
+    # could always be blamed on the texts differing; here that alternative explanation is
+    # structurally unavailable.
+    pi_priority_languages: {kazakh: kaz_Cyrl, bangla: ben_Beng}
+    verified_present: [kaz_Cyrl, ben_Beng, eng_Latn, amh_Ethi, tat_Cyrl, hin_Deva]
+    known_limitations: >
+      Topic classification, not a safety task -- it tests the MECHANISM, not the
+      application. Only ~899 examples per language, so per-language estimates are noisy and
+      the population-level claim carries the weight. FLORES-200 text is professionally
+      translated and therefore not naturally occurring.
+
+  sentiment_multilingual:
+    hf_id: cardiffnlp/tweet_sentiment_multilingual
+    revision: "14b13edfbc4046892f6011d114c29c0f83170589"
+    task: sentiment
+    role: secondary
+    gated: false
+    notes: >
+      Secondary task family, used to test whether the threshold-transfer phenomenon
+      is specific to toxicity. Three-class; binarized (positive vs negative, neutral
+      dropped) so that a single decision threshold is the natural operating point.
+
+  sentiment_multilingual_alt:
+    hf_id: tyqiangz/multilingual-sentiments
+    revision: "a3080a58e563138e9c7a61765d8120b388dc572d"
+    task: sentiment
+    role: secondary_backup
+    gated: false
+
+models:
+  # --- Arm B: frozen encoders (controlled arm) ---
+  encoder_minilm:
+    hf_id: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    revision: "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+    arm: B
+    kind: sentence_encoder
+    measured_throughput_texts_per_s: 118.3
+    measured_full_corpus_minutes: 10.1
+
+  encoder_e5_small:
+    hf_id: intfloat/multilingual-e5-small
+    revision: "614241f622f53c4eeff9890bdc4f31cfecc418b3"
+    arm: B
+    kind: sentence_encoder
+    measured_throughput_texts_per_s: 84.0
+    measured_full_corpus_minutes: 14.2
+    notes: "E5 models expect a 'query: ' / 'passage: ' prefix; we use 'query: '."
+
+  # --- Arm A: off-the-shelf deployed classifiers (externally valid arm) ---
+  clf_unitary_xlmr:
+    hf_id: unitary/multilingual-toxic-xlm-roberta
+    revision: "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5"
+    arm: A
+    kind: sequence_classifier
+    training_data_provenance: "Jigsaw multilingual toxic comment data (Detoxify family)"
+    contamination_check: "PASS - not trained on textdetox corpus"
+    # hf_hub_download stalled at zero bytes on this file repeatedly, while a direct HTTP
+    # range request to the same resolve/<revision>/ URL returned data immediately -- a
+    # library resume/lock problem, not a network one. Fetched with
+    # scripts/fetch_model_direct.py, which pins the SAME revision, so the reproducibility
+    # guarantee is unchanged. SHA-256 of every file is in download_manifest.json.
+    local_dir: data/models/unitary-multilingual-toxic-xlm-roberta
+
+  clf_citizenlab_distilbert:
+    hf_id: citizenlab/distilbert-base-multilingual-cased-toxicity
+    revision: "b4532a8b095d1886a7b5dff818331ecc88a855ae"
+    arm: A
+    kind: sequence_classifier
+    training_data_provenance: "Wikipedia/Jigsaw-derived toxicity data"
+    contamination_check: "PASS - not trained on textdetox corpus"
+
+  clf_cardiff_sentiment:
+    hf_id: cardiffnlp/twitter-xlm-roberta-base-sentiment
+    revision: "f2f1202b1bdeb07342385c3f807f9c07cd8f5cf8"
+    arm: A
+    kind: sequence_classifier
+    task: sentiment
+    training_data_provenance: "Multilingual Twitter sentiment"
+    contamination_check: "PASS - different corpus"
+
+# ---------------------------------------------------------------------------
+# EXCLUDED RESOURCES -- kept here deliberately so the exclusion is visible and is
+# not silently reversed by a future contributor who finds these models and assumes
+# they were simply overlooked.
+# ---------------------------------------------------------------------------
+excluded_models:
+  - hf_id: textdetox/xlmr-large-toxicity-classifier
+    revision: "b9c7c563427c591fc318d91eb592381ae2fbde66"
+    reason: >
+      CONTAMINATION (risk R-12). Fine-tuned on textdetox/multilingual_toxicity_dataset,
+      which is this project's primary evaluation corpus. Using it as an
+      "off-the-shelf deployed classifier" would measure memorization of the
+      evaluation set rather than deployment behaviour, and would inflate every
+      Arm-A result.
+  - hf_id: textdetox/bert-multilingual-toxicity-classifier
+    reason: "CONTAMINATION (risk R-12). Same lineage and same training corpus."

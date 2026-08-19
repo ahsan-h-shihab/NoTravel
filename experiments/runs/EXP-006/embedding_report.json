@@ -1,0 +1,707 @@
+{
+  "model_key": "encoder_minilm",
+  "hf_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "max_seq_length": 128,
+  "batch_size": 32,
+  "embedding_dim": 384,
+  "total_seconds": 2837.77,
+  "per_language": {
+    "ace_Latn": {
+      "cached": false,
+      "seconds": 18.75
+    },
+    "acm_Arab": {
+      "cached": false,
+      "seconds": 14.02
+    },
+    "acq_Arab": {
+      "cached": false,
+      "seconds": 13.77
+    },
+    "aeb_Arab": {
+      "cached": false,
+      "seconds": 13.91
+    },
+    "afr_Latn": {
+      "cached": false,
+      "seconds": 13.89
+    },
+    "ajp_Arab": {
+      "cached": false,
+      "seconds": 12.79
+    },
+    "aka_Latn": {
+      "cached": false,
+      "seconds": 20.38
+    },
+    "als_Latn": {
+      "cached": false,
+      "seconds": 14.84
+    },
+    "amh_Ethi": {
+      "cached": false,
+      "seconds": 15.71
+    },
+    "apc_Arab": {
+      "cached": false,
+      "seconds": 12.81
+    },
+    "arb_Latn": {
+      "cached": false,
+      "seconds": 19.34
+    },
+    "ars_Arab": {
+      "cached": false,
+      "seconds": 13.58
+    },
+    "arz_Arab": {
+      "cached": false,
+      "seconds": 13.21
+    },
+    "asm_Beng": {
+      "cached": false,
+      "seconds": 19.53
+    },
+    "ast_Latn": {
+      "cached": false,
+      "seconds": 14.84
+    },
+    "awa_Deva": {
+      "cached": false,
+      "seconds": 15.57
+    },
+    "ayr_Latn": {
+      "cached": false,
+      "seconds": 17.26
+    },
+    "azj_Latn": {
+      "cached": false,
+      "seconds": 13.7
+    },
+    "bak_Cyrl": {
+      "cached": false,
+      "seconds": 21.13
+    },
+    "ban_Latn": {
+      "cached": false,
+      "seconds": 14.35
+    },
+    "bel_Cyrl": {
+      "cached": false,
+      "seconds": 16.74
+    },
+    "bem_Latn": {
+      "cached": false,
+      "seconds": 18.15
+    },
+    "ben_Beng": {
+      "cached": false,
+      "seconds": 16.66
+    },
+    "bho_Deva": {
+      "cached": false,
+      "seconds": 16.22
+    },
+    "bjn_Latn": {
+      "cached": false,
+      "seconds": 13.38
+    },
+    "bos_Latn": {
+      "cached": false,
+      "seconds": 12.84
+    },
+    "bul_Cyrl": {
+      "cached": false,
+      "seconds": 13.81
+    },
+    "cat_Latn": {
+      "cached": false,
+      "seconds": 15.17
+    },
+    "ceb_Latn": {
+      "cached": false,
+      "seconds": 15.43
+    },
+    "ces_Latn": {
+      "cached": false,
+      "seconds": 13.83
+    },
+    "cjk_Latn": {
+      "cached": false,
+      "seconds": 16.09
+    },
+    "ckb_Arab": {
+      "cached": false,
+      "seconds": 22.01
+    },
+    "crh_Latn": {
+      "cached": false,
+      "seconds": 15.24
+    },
+    "cym_Latn": {
+      "cached": false,
+      "seconds": 16.78
+    },
+    "dan_Latn": {
+      "cached": false,
+      "seconds": 13.13
+    },
+    "deu_Latn": {
+      "cached": false,
+      "seconds": 14.13
+    },
+    "dik_Latn": {
+      "cached": false,
+      "seconds": 19.55
+    },
+    "ell_Grek": {
+      "cached": false,
+      "seconds": 17.63
+    },
+    "eng_Latn": {
+      "cached": false,
+      "seconds": 11.67
+    },
+    "epo_Latn": {
+      "cached": false,
+      "seconds": 12.91
+    },
+    "est_Latn": {
+      "cached": false,
+      "seconds": 12.65
+    },
+    "eus_Latn": {
+      "cached": false,
+      "seconds": 13.35
+    },
+    "ewe_Latn": {
+      "cached": false,
+      "seconds": 21.33
+    },
+    "fao_Latn": {
+      "cached": false,
+      "seconds": 15.62
+    },
+    "fij_Latn": {
+      "cached": false,
+      "seconds": 17.27
+    },
+    "fin_Latn": {
+      "cached": false,
+      "seconds": 13.05
+    },
+    "fon_Latn": {
+      "cached": false,
+      "seconds": 24.67
+    },
+    "fra_Latn": {
+      "cached": false,
+      "seconds": 14.87
+    },
+    "fur_Latn": {
+      "cached": false,
+      "seconds": 17.17
+    },
+    "fuv_Latn": {
+      "cached": false,
+      "seconds": 16.85
+    },
+    "gaz_Latn": {
+      "cached": false,
+      "seconds": 18.53
+    },
+    "gla_Latn": {
+      "cached": false,
+      "seconds": 18.56
+    },
+    "gle_Latn": {
+      "cached": false,
+      "seconds": 16.33
+    },
+    "glg_Latn": {
+      "cached": false,
+      "seconds": 13.32
+    },
+    "guj_Gujr": {
+      "cached": false,
+      "seconds": 17.21
+    },
+    "hau_Latn": {
+      "cached": false,
+      "seconds": 15.37
+    },
+    "heb_Hebr": {
+      "cached": false,
+      "seconds": 12.74
+    },
+    "hin_Deva": {
+      "cached": false,
+      "seconds": 14.41
+    },
+    "hne_Deva": {
+      "cached": false,
+      "seconds": 16.34
+    },
+    "hrv_Latn": {
+      "cached": false,
+      "seconds": 12.69
+    },
+    "hun_Latn": {
+      "cached": false,
+      "seconds": 13.75
+    },
+    "hye_Armn": {
+      "cached": false,
+      "seconds": 17.12
+    },
+    "ibo_Latn": {
+      "cached": false,
+      "seconds": 22.27
+    },
+    "ilo_Latn": {
+      "cached": false,
+      "seconds": 17.08
+    },
+    "ind_Latn": {
+      "cached": false,
+      "seconds": 12.9
+    },
+    "isl_Latn": {
+      "cached": false,
+      "seconds": 13.81
+    },
+    "ita_Latn": {
+      "cached": false,
+      "seconds": 13.87
+    },
+    "jav_Latn": {
+      "cached": false,
+      "seconds": 12.87
+    },
+    "kab_Latn": {
+      "cached": false,
+      "seconds": 18.92
+    },
+    "kac_Latn": {
+      "cached": false,
+      "seconds": 18.98
+    },
+    "kan_Knda": {
+      "cached": false,
+      "seconds": 16.71
+    },
+    "kat_Geor": {
+      "cached": false,
+      "seconds": 15.96
+    },
+    "kaz_Cyrl": {
+      "cached": false,
+      "seconds": 13.94
+    },
+    "kbp_Latn": {
+      "cached": false,
+      "seconds": 26.94
+    },
+    "kea_Latn": {
+      "cached": false,
+      "seconds": 14.9
+    },
+    "khk_Cyrl": {
+      "cached": false,
+      "seconds": 14.56
+    },
+    "kik_Latn": {
+      "cached": false,
+      "seconds": 23.71
+    },
+    "kin_Latn": {
+      "cached": false,
+      "seconds": 17.47
+    },
+    "kir_Cyrl": {
+      "cached": false,
+      "seconds": 13.37
+    },
+    "kmb_Latn": {
+      "cached": false,
+      "seconds": 16.54
+    },
+    "kmr_Latn": {
+      "cached": false,
+      "seconds": 15.05
+    },
+    "knc_Latn": {
+      "cached": false,
+      "seconds": 17.96
+    },
+    "kon_Latn": {
+      "cached": false,
+      "seconds": 16.21
+    },
+    "kor_Hang": {
+      "cached": false,
+      "seconds": 13.24
+    },
+    "lij_Latn": {
+      "cached": false,
+      "seconds": 17.62
+    },
+    "lim_Latn": {
+      "cached": false,
+      "seconds": 15.49
+    },
+    "lin_Latn": {
+      "cached": false,
+      "seconds": 16.24
+    },
+    "lit_Latn": {
+      "cached": false,
+      "seconds": 13.41
+    },
+    "lmo_Latn": {
+      "cached": false,
+      "seconds": 18.32
+    },
+    "ltg_Latn": {
+      "cached": false,
+      "seconds": 16.46
+    },
+    "ltz_Latn": {
+      "cached": false,
+      "seconds": 17.36
+    },
+    "lug_Latn": {
+      "cached": false,
+      "seconds": 15.74
+    },
+    "luo_Latn": {
+      "cached": false,
+      "seconds": 15.71
+    },
+    "lus_Latn": {
+      "cached": false,
+      "seconds": 17.3
+    },
+    "lvs_Latn": {
+      "cached": false,
+      "seconds": 15.09
+    },
+    "mag_Deva": {
+      "cached": false,
+      "seconds": 16.91
+    },
+    "mai_Deva": {
+      "cached": false,
+      "seconds": 17.32
+    },
+    "mal_Mlym": {
+      "cached": false,
+      "seconds": 17.25
+    },
+    "mar_Deva": {
+      "cached": false,
+      "seconds": 15.31
+    },
+    "min_Latn": {
+      "cached": false,
+      "seconds": 14.72
+    },
+    "mkd_Cyrl": {
+      "cached": false,
+      "seconds": 13.65
+    },
+    "mlt_Latn": {
+      "cached": false,
+      "seconds": 19.74
+    },
+    "mni_Beng": {
+      "cached": false,
+      "seconds": 23.43
+    },
+    "mos_Latn": {
+      "cached": false,
+      "seconds": 19.07
+    },
+    "mri_Latn": {
+      "cached": false,
+      "seconds": 18.62
+    },
+    "mya_Mymr": {
+      "cached": false,
+      "seconds": 19.14
+    },
+    "nld_Latn": {
+      "cached": false,
+      "seconds": 13.51
+    },
+    "nno_Latn": {
+      "cached": false,
+      "seconds": 13.03
+    },
+    "nob_Latn": {
+      "cached": false,
+      "seconds": 12.42
+    },
+    "npi_Deva": {
+      "cached": false,
+      "seconds": 14.04
+    },
+    "nqo_Nkoo": {
+      "cached": false,
+      "seconds": 20.55
+    },
+    "nso_Latn": {
+      "cached": false,
+      "seconds": 17.54
+    },
+    "nus_Latn": {
+      "cached": false,
+      "seconds": 24.38
+    },
+    "nya_Latn": {
+      "cached": false,
+      "seconds": 16.27
+    },
+    "oci_Latn": {
+      "cached": false,
+      "seconds": 16.12
+    },
+    "ory_Orya": {
+      "cached": false,
+      "seconds": 16.94
+    },
+    "pag_Latn": {
+      "cached": false,
+      "seconds": 14.5
+    },
+    "pan_Guru": {
+      "cached": false,
+      "seconds": 17.58
+    },
+    "pap_Latn": {
+      "cached": false,
+      "seconds": 15.27
+    },
+    "pbt_Arab": {
+      "cached": false,
+      "seconds": 15.05
+    },
+    "pes_Arab": {
+      "cached": false,
+      "seconds": 12.85
+    },
+    "plt_Latn": {
+      "cached": false,
+      "seconds": 16.42
+    },
+    "pol_Latn": {
+      "cached": false,
+      "seconds": 13.89
+    },
+    "por_Latn": {
+      "cached": false,
+      "seconds": 13.22
+    },
+    "prs_Arab": {
+      "cached": false,
+      "seconds": 12.62
+    },
+    "quy_Latn": {
+      "cached": false,
+      "seconds": 17.27
+    },
+    "ron_Latn": {
+      "cached": false,
+      "seconds": 14.13
+    },
+    "run_Latn": {
+      "cached": false,
+      "seconds": 18.07
+    },
+    "rus_Cyrl": {
+      "cached": false,
+      "seconds": 14.71
+    },
+    "sag_Latn": {
+      "cached": false,
+      "seconds": 18.48
+    },
+    "sat_Olck": {
+      "cached": false,
+      "seconds": 18.29
+    },
+    "scn_Latn": {
+      "cached": false,
+      "seconds": 16.58
+    },
+    "sin_Sinh": {
+      "cached": false,
+      "seconds": 16.22
+    },
+    "slk_Latn": {
+      "cached": false,
+      "seconds": 13.4
+    },
+    "slv_Latn": {
+      "cached": false,
+      "seconds": 12.81
+    },
+    "smo_Latn": {
+      "cached": false,
+      "seconds": 18.92
+    },
+    "sna_Latn": {
+      "cached": false,
+      "seconds": 16.96
+    },
+    "snd_Arab": {
+      "cached": false,
+      "seconds": 14.74
+    },
+    "som_Latn": {
+      "cached": false,
+      "seconds": 15.71
+    },
+    "sot_Latn": {
+      "cached": false,
+      "seconds": 18.8
+    },
+    "spa_Latn": {
+      "cached": false,
+      "seconds": 14.51
+    },
+    "srd_Latn": {
+      "cached": false,
+      "seconds": 17.71
+    },
+    "srp_Cyrl": {
+      "cached": false,
+      "seconds": 14.4
+    },
+    "ssw_Latn": {
+      "cached": false,
+      "seconds": 17.71
+    },
+    "swe_Latn": {
+      "cached": false,
+      "seconds": 12.3
+    },
+    "swh_Latn": {
+      "cached": false,
+      "seconds": 13.24
+    },
+    "szl_Latn": {
+      "cached": false,
+      "seconds": 17.87
+    },
+    "tam_Taml": {
+      "cached": false,
+      "seconds": 16.39
+    },
+    "taq_Tfng": {
+      "cached": false,
+      "seconds": 21.54
+    },
+    "tat_Cyrl": {
+      "cached": false,
+      "seconds": 20.28
+    },
+    "tel_Telu": {
+      "cached": false,
+      "seconds": 17.13
+    },
+    "tgl_Latn": {
+      "cached": false,
+      "seconds": 15.87
+    },
+    "tir_Ethi": {
+      "cached": false,
+      "seconds": 20.17
+    },
+    "tpi_Latn": {
+      "cached": false,
+      "seconds": 18.55
+    },
+    "tsn_Latn": {
+      "cached": false,
+      "seconds": 18.88
+    },
+    "tso_Latn": {
+      "cached": false,
+      "seconds": 18.69
+    },
+    "tuk_Latn": {
+      "cached": false,
+      "seconds": 18.54
+    },
+    "tum_Latn": {
+      "cached": false,
+      "seconds": 19.72
+    },
+    "tur_Latn": {
+      "cached": false,
+      "seconds": 12.35
+    },
+    "twi_Latn": {
+      "cached": false,
+      "seconds": 19.49
+    },
+    "tzm_Tfng": {
+      "cached": false,
+      "seconds": 16.17
+    },
+    "uig_Arab": {
+      "cached": false,
+      "seconds": 16.01
+    },
+    "ukr_Cyrl": {
+      "cached": false,
+      "seconds": 14.83
+    },
+    "umb_Latn": {
+      "cached": false,
+      "seconds": 16.96
+    },
+    "uzn_Latn": {
+      "cached": false,
+      "seconds": 15.85
+    },
+    "vec_Latn": {
+      "cached": false,
+      "seconds": 15.47
+    },
+    "vie_Latn": {
+      "cached": false,
+      "seconds": 14.26
+    },
+    "war_Latn": {
+      "cached": false,
+      "seconds": 16.9
+    },
+    "wol_Latn": {
+      "cached": false,
+      "seconds": 18.04
+    },
+    "xho_Latn": {
+      "cached": false,
+      "seconds": 17.47
+    },
+    "ydd_Hebr": {
+      "cached": false,
+      "seconds": 17.57
+    },
+    "yor_Latn": {
+      "cached": false,
+      "seconds": 23.74
+    },
+    "zsm_Latn": {
+      "cached": false,
+      "seconds": 11.81
+    },
+    "zul_Latn": {
+      "cached": false,
+      "seconds": 16.95
+    }
+  }
+}

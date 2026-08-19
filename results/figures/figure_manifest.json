@@ -1,0 +1,47 @@
+[
+  {
+    "figure": "fig1_threshold_divergence",
+    "source_data": "results/tables/EXP-002_threshold_study.csv",
+    "plotting_function": "src.analysis.figures.fig_threshold_divergence",
+    "exports": [
+      "results/figures/fig1_threshold_divergence.pdf"
+    ],
+    "caption": "Per-language calibrated decision thresholds for a fixed multilingual classifier, each selected to meet a 0.05 false-positive budget on that language, against the single threshold tuned on the English source language (dashed line). Thresholds diverge substantially: over the 14 target languages the median absolute difference is 0.260 on a [0,1] score scale, reaching 0.361 for Hebrew. These are the same per-language thresholds tabulated in the per-language operating-point table."
+  },
+  {
+    "figure": "fig2b_strategy_tradeoff",
+    "source_data": "results/tables/EXP-002_threshold_study.csv",
+    "plotting_function": "src.analysis.figures.fig_strategy_tradeoff",
+    "exports": [
+      "results/figures/fig2b_strategy_tradeoff.pdf"
+    ],
+    "caption": "The deployment trade-off, shown as paired panels because the two measures are on different scales and a dual-axis chart would misrepresent them. Left: realised false-positive rate against the 0.05 budget set on English. Right: the recall that operating point achieves. Both panels plot means over the 14 target languages, with standard errors across languages; the tables and the text report medians, which are the more robust summary of a skewed per-language distribution and are not the quantity plotted here, so bar heights and table entries differ and both are correct. The most conservative strategy never exceeds the budget, but the right panel shows it does so by barely firing; a reader shown only the left panel would draw the opposite conclusion."
+  },
+  {
+    "figure": "fig3_label_efficiency",
+    "source_data": "results/tables/EXP-002_threshold_study.csv",
+    "plotting_function": "src.analysis.figures.fig_label_efficiency",
+    "exports": [
+      "results/figures/fig3_label_efficiency.pdf"
+    ],
+    "caption": "Fraction of target languages exceeding the 0.05 false-positive budget, as a function of the number of labelled target-language examples used to set the threshold, at the corpus's native 50/50 class balance. Compliance is unattainable below k = 32. In this panel random sampling is never worse than class-stratified sampling and is better at two of the six draw sizes. Both schemes draw the same expected number of negatives at 50/50, so the negatives mechanism that separates them at deployment-realistic prevalence cannot account for that difference here; the results section reports the full sweep over four prevalences."
+  },
+  {
+    "figure": "fig4_auroc_vs_gap",
+    "source_data": "results/tables/EXP-003_threshold_study.csv",
+    "plotting_function": "src.analysis.figures.fig_auroc_vs_gap",
+    "exports": [
+      "results/figures/fig4_auroc_vs_gap.pdf"
+    ],
+    "caption": "Threshold-free model quality (AUROC) against the F1 gained by per-language calibration at 50/50 class balance, by resource tier, over the 14 target languages. The negative association (Spearman correlation -0.701) is the reason the F1 objective was rejected as primary: apparent calibration gains concentrate in languages where the model carries least signal, and it is there that the F1-optimal threshold degenerates toward flagging all text."
+  },
+  {
+    "figure": "fig5_degeneracy_vs_prevalence",
+    "source_data": "results/tables/EXP-003_threshold_study.csv",
+    "plotting_function": "scripts/make_figures.py:fig5_degeneracy_vs_prevalence",
+    "exports": [
+      "results/figures/fig5_degeneracy_vs_prevalence.pdf"
+    ],
+    "caption": "Number of target languages whose F1-optimal per-language threshold is degenerate (flagging over 80% of all text), as a function of positive-class prevalence. The artefact is produced by the corpus's artificial 50/50 balance and disappears entirely at deployment-realistic prevalence."
+  }
+]

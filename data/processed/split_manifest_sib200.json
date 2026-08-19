@@ -1,0 +1,1924 @@
+{
+  "seed": 20260802,
+  "split_fractions": {
+    "train": 0.5,
+    "dev": 0.2,
+    "test": 0.3
+  },
+  "languages": {
+    "ace_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bbab47512df0279063a5d62ab6e18dcb49b3e12e87ad27a2c82c2aa4d4201cf1"
+    },
+    "acm_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "279130a1a5ebb5af713899fb412c871e8b6219157b8fe9fad566666c3d6ea6e7"
+    },
+    "acq_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7379a68fb5e4eb9bfa7f92ef37237b427417309d0b0a008b3e35d7433eb2bbf9"
+    },
+    "aeb_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d5451b58c133548701d4a04926979fca089b156d713544a9eaf3158c08d4e81d"
+    },
+    "afr_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0eb669122575bdf09d044255d2fa44086c0be39f5d403b58c24314740d50de07"
+    },
+    "ajp_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b35d51abd54eb78f3cdc611bae8b81f8659aa824a264560232855c6de604899c"
+    },
+    "aka_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d9cffc557f976fc84ecc1e0712bf00bfe246325fe3c2b9e40aea2fa17c9f9d7d"
+    },
+    "als_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d2b4907905d1af21ad54c1279adf9b333325bb3d864057a8a79cb7ddb348bb98"
+    },
+    "amh_Ethi": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7fa08c6ba6cf76176c1231ee060ac164d7abb97c0382956e2450fdfb940d324b"
+    },
+    "apc_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "dc7fdd9c9c1f93b40428bba64ff326efd7ee99e53dd181179673c2474590cc35"
+    },
+    "arb_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b125331c82be853657deb80a6bd7de5d70b453ab605bb0291c5d53eba4de0910"
+    },
+    "ars_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "dee294ea82483f2ee5d33c2662e49156778304451d2e383cf8701573e9661c84"
+    },
+    "arz_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f2c95d94e5c4a8c3f70e4aeeaba179d6c9344de637326e72d8e90adfe91221e0"
+    },
+    "asm_Beng": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4797f70777d40d8307c853114214c93abacfe683db3de7d86a6e229a91980304"
+    },
+    "ast_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "cde828c8f570738dbf7195dc5c4716f964d25d71f7af9f71d86a3d53e9737b2f"
+    },
+    "awa_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "31e1377949751012d8eb911242bbcb769bf86af29571bf1d3df33b14b5399413"
+    },
+    "ayr_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bd46bed5bab6bf1cf59e6ed434f56bee66a15c29851107dfa70326b04af33163"
+    },
+    "azj_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7aac3a30ba74dde9137e92d50f01295f0c15f55cb5ff04628c539e16d9159f47"
+    },
+    "bak_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ed62faab03a566609b88131dbbe07af535edb2c893d47608a15c178c581dd6e7"
+    },
+    "ban_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f7dc6e097c089646029f3285c50baf502ec2d25896b0965e4b886e0050374a7d"
+    },
+    "bel_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "88e79178b8672b4ba5742ee4deb2ab05edd75237749f48be6df710b23191ca8b"
+    },
+    "bem_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7680d7ca432d1a45a210aacf368a5bdc665ba97983ca05b736a005feed1b13f4"
+    },
+    "ben_Beng": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "2f005b761a8f7bcd1e54a72444a9cf4511365e572695d3177679f7a6b95d7ad2"
+    },
+    "bho_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "09cc424ece208822a33d9ba35f2f12569a6e7c8fd2b6e002403fc5e072dbf590"
+    },
+    "bjn_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d0f48935039e78135840b13de909ea1081679d182263b63689fae90964694ae5"
+    },
+    "bos_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b29a44c7b8fa3f4745930e43c175cf61a02fe8a8df3e5757a724605f82df9d88"
+    },
+    "bul_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "2d0fe2d3e576dd96f298cc36d31efcf6b6384686874fd6d6e39a00a1d09eadc1"
+    },
+    "cat_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "cb785c472a8497ea53b7b78d19b950c7dbb6ba303b09392fbccf0017d05485dd"
+    },
+    "ceb_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "95c455a4aeeb7a0344c75003c5b9a3f43dc2e4bb36ef6251d653dc7c53422473"
+    },
+    "ces_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "501b20fcf9e5ff56e6f09591aa0ac460554b53a5ee103eec2e7f366363f6ac34"
+    },
+    "cjk_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "cd4bb060be44981f6a35121bd0edf364316e2990bf25184f03552e3f6bd61170"
+    },
+    "ckb_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "66532255c7c2977b791367d8a7ed1c9deef6a5d2e1c866b813df450fb3ef69e5"
+    },
+    "crh_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "df09195dc370d3e9f17e4f2e76ffe0cca21484fc740afb6f0bbcd3caf64052d1"
+    },
+    "cym_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "2d48d4fe9271d00b52ab8b15618a329e4010b15479f7a370f9aec43d8eb88010"
+    },
+    "dan_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "47b34fb68053b1dec21fb9ec37141d79ce2de5c89790d1f6b520cdf178753ef1"
+    },
+    "deu_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b5b8c0768ad3b869a569a84f79fee6b2ce7abc9409c5c6fe38edc6ce0409ddab"
+    },
+    "dik_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "55b06ec4dce2e07bbaf35658b90d7124afb7fd500057c8d5c9289f047ca6d580"
+    },
+    "ell_Grek": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a1c36ddcf76a0c036aa949cb491ee3fe4e72ff3107b1ceabd7800082bf490c59"
+    },
+    "eng_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "544d0a44870556a15ee0fea8ceb72fe823c43a7043ec2b19765ad589ace285e1"
+    },
+    "epo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4150f13271996a637b077e7399e242920ae18fbe72301ffd2c8a3b6850fad6f8"
+    },
+    "est_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e503003daa9b84fab0aeeb6c9168ec0942d014c1a201af5404f9bfab40114b37"
+    },
+    "eus_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "36c0500a1f6e5d9a6689f4c061fa399f87eb9ac89e49c102c00ee5be1bf8ebb6"
+    },
+    "ewe_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a2529d247b4abd7efb0d8e22f69851a1a0a3688011679116c835c4df770600a1"
+    },
+    "fao_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7f502d35e29e25822196f0ff8141a6e2682738e0a9c8c9882311b43e4900adcd"
+    },
+    "fij_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "fd216188ab6820222cec0eb07609fdce74d955b5f0a0152317b769fe8bdf6ba5"
+    },
+    "fin_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4d5abe8e97650e9120a90f28c457ff212594c2d382f3cc5ebf90582c1848072d"
+    },
+    "fon_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "16ff94d6f75bcc539ea069433c26e4ab260a569972884284e1dd73f2da61d31e"
+    },
+    "fra_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0ec4291bdad084e5b5d7f48045285c7ac4fce94054cec3ffecac1bebb319cbf4"
+    },
+    "fur_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "c5d794db15fc28cdbf174d9301551d4966fdd4dd6580a5f172ceb43d38590f2c"
+    },
+    "fuv_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ba52228bbe53ad6d729f655ddf7d6fed3b4fb2fbcb46da27a970e4aeb805ad1d"
+    },
+    "gaz_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bfb6a2816a532bd6fb21e1f46c56ef25a5549ea0617aa9c00742b65cd1338b0c"
+    },
+    "gla_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "3f637c52c476101cd0085ec525ba69f4dce3dfa9c6be9e438eb9f5d6247e82a4"
+    },
+    "gle_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bfe15e6dd7c5190a55fa2c7041a0d08c904b9457d874697d5f9b60268dc95113"
+    },
+    "glg_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "c4994349c5f0a689fdeaaf2f6cc3400eac8c5d738f111610c8a4f2c389a332ea"
+    },
+    "guj_Gujr": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "51fb6f9521a28c377f9d80809c17176b757613dc584dd7b0af941819801403f8"
+    },
+    "hau_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7364484e581fd67c9017f8aa9a7d102b367d8cf61be6af4f5d31685fa5be7819"
+    },
+    "heb_Hebr": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "628605d9c535b5e2cb1eb87842d3f4dd409954b95baa0cb336b41a8c93188027"
+    },
+    "hin_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "fb26111b38da405ac2c48c3e0bcc489e8851696a3b4e18d8286fab604d3e55db"
+    },
+    "hne_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "cbbd01d49033ba1a8f97cf63a2673bc5061f74c4e997e829877af32a0088af16"
+    },
+    "hrv_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "04f8e98be48d7a6bd3d22678a53b612b507ed9415f23a3724644a3446604ab20"
+    },
+    "hun_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6b8f5271ddb42bf88020225f8f90e2b692919f24a450e65a31da79145b1ea643"
+    },
+    "hye_Armn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "95c9b9b1ce36eefb32a5d63a2041cf91114a569770f26e2551146ec719dead1c"
+    },
+    "ibo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "551a462623fdfa36dd37ea5a68a3c483b06b4762fdc955c147ece62971b76c86"
+    },
+    "ilo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "479a5f62696841870b13805b6c3e670fec4b68dc1d480b0a24f054d540053f7f"
+    },
+    "ind_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4f6e294acd76d992f394b97ef44895dccf76edf77b5664ecbcaf0dacd461fd0e"
+    },
+    "isl_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e8b5bf3a5e1331ee5aa9d212699ee5576a678107a675efa131362f63f29ee3f3"
+    },
+    "ita_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "79554480a4c5bba59ca3fbec11f29a1e67be1c55a00a90cebad287af0ec58f8e"
+    },
+    "jav_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "867d5fc9deec2c1f2db32823150fb1c4ea95c0e7e59a67f531a6902365d1baa8"
+    },
+    "kab_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bbe4ace96ed73a230434764d3c77ee50eb3418b9bdc0a326a169c021ebebd9e2"
+    },
+    "kac_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "440212050292fd3ec6e2caff3339aca2db1382cf58f5d236b0079589d033ca46"
+    },
+    "kan_Knda": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e329e2f7cd6e778575ac57a5540a76eb8f8b1732750592b7e9235758efe9c8a9"
+    },
+    "kat_Geor": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e9a83ed0433cfb17e384730d72865c1de8c1dd670568d7c4a058cfd866dd43e7"
+    },
+    "kaz_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "08545e35ec8daded9deec5b32b8c15b4b4bd6347f09c5940ca95673fc0717111"
+    },
+    "kbp_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "dd6826c39cad9b82825bfddcd4ce10104156293baec65a59f3211ecc955d533a"
+    },
+    "kea_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "66038b5fcfb4a6bd150013e861a648c044405505f4344f88e2ac531759ed3bfe"
+    },
+    "khk_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e1fe43ec3e85afa215471c92099c2794b4dff732436bb524a7900753ad67859c"
+    },
+    "kik_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "53ffe36b2641cd92ee3a5044bb84f6ebf0b2f08b70d6e26d99b905a36888ed00"
+    },
+    "kin_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ade54a59c393f33dcb4f3d8cf56b3a934fba0d443fdf9329ccb3d9f677cfe2b7"
+    },
+    "kir_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "1d4151bf33f3a7d1af7bd160874205691083c9a6f5ea628534f6f0e8579775fc"
+    },
+    "kmb_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "9d73e6ab74b5051a84e3723a34444b6487a71a106a7a5874315b7dfd81addb37"
+    },
+    "kmr_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6153ec305071ebb6f60b522eaba344b1b71ab281d7cb685f9d1f30a7ce463577"
+    },
+    "knc_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "424e65962b84499e6c61de639f58bc1c9fcfae4c5665565417979bc3606ebf04"
+    },
+    "kon_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e5aac443e32a84a5d116e3ff7295d572115785c369bcc079753516ea9d5f6afa"
+    },
+    "kor_Hang": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "21480fb12437e38aa4acee68acbae53a8bac94aaeb79369526882f9b07236d06"
+    },
+    "lij_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f63d4a5d08e2741bfb17f6a648042f55f47a06029c771a5e5caed36a160833c4"
+    },
+    "lim_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4d0ef049a6d617baa629a0ac76e5362cbc590f59eb5bc3be87234e01b0bc9990"
+    },
+    "lin_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "2f1f7cbf893c4883623a7d2667240b30529ade8548c528e4554eb52d5886ee46"
+    },
+    "lit_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "9a9547df19b8c99c86e2069b85db337f8fed0fcb6fe465951d0c701375de48b8"
+    },
+    "lmo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "528e491b9402ffc7dbfd11d399b2af03979ca426b663e2c9dc11cda67110970e"
+    },
+    "ltg_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "2c2cdef85e4c333496bdc47133429959d3f16cbf6430c62e56aa32a5ebca4d85"
+    },
+    "ltz_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f1489de719c0d140bc785a85851e55ef75201e2f8275f54fa3ca4813547ef68b"
+    },
+    "lug_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "3c7592340aff959ec56ef459e7a3754e7f7d2dab8893b3a1623ecb657cf4361c"
+    },
+    "luo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "aa66855ced3144680c1b1943718da7d18a9c898feb5fc03de513ff68b27f877c"
+    },
+    "lus_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "c2952a1cf947e26984baae397d6888e34491f250f351a6efef49acc891bd8017"
+    },
+    "lvs_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ab2dd635345aea1f80afef8efed8b884c274fa9bb4e798e2049a5327bc3b386b"
+    },
+    "mag_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a78bcda1cc7adac5fc16bd15220171c67c6ae94540be6d969f17a909fa5cda17"
+    },
+    "mai_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "9da61800fc2c8cf7b1051ae05bf3b4849eaef677cb7b24e4eb82545c66de5654"
+    },
+    "mal_Mlym": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b9378640d84f111ae1174902b5636b7b2a994423e23b4fcca4c0ce25ac3fb17c"
+    },
+    "mar_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0e48801c8136a071f753deaa80754bf5a1c5a2cde45a6149ad56e843dff73be6"
+    },
+    "min_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0d62745b35c4de881967cf23f594e871347a009be999eb01a1c7416be9a793c3"
+    },
+    "mkd_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4a302c230f2bb51dca4fe2cec2bd8719792a6f524c75891acf3f2455bfd28217"
+    },
+    "mlt_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "8bbfdc49967691e81cdf12afdf55eb1027d47b623081b5ba7d0885f31bbfbc3e"
+    },
+    "mni_Beng": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "87cc2b6c1b77277a11c564d711b0c60a82ce3cf3697d2c1f7032bd8eb741ee6d"
+    },
+    "mos_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "fb7549b41d8333a5c554a125ad42f3ce76c8a73cb339d18ca560621d06a2d6a2"
+    },
+    "mri_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "eece7b39b5bbdc2b4b111aa3e9da1ea68140775853745e3d1001eb53e4bd32a0"
+    },
+    "mya_Mymr": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "aaf3e05054ee71eb69960abf0db2161ed2065cc8ca3b6a0a6753eb450354bc6e"
+    },
+    "nld_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "5e71b7cf59134f3764f766a7e5a3fb2f9ae9c9da764e64e02b52828ab4efd38e"
+    },
+    "nno_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "872e2ba82fc7948d494a8df3f69f324c070e5fc2eb47a631cc39327872bc7b6e"
+    },
+    "nob_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "55f0c8cedb1700b76a9097783f6a41598d74845667db4c50b07abbf02e10d442"
+    },
+    "npi_Deva": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "488e00dc20a26a762cf191a3671433639d3f761f009326a5f7496d2358903a8f"
+    },
+    "nqo_Nkoo": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0192819949d781d1618a7d82b62f790c80dc0ba863dc5d08456fb1a33d746c58"
+    },
+    "nso_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7fd595fcf9e00f28484585b104b4c049f8d843f69a0179e142502d3780a04652"
+    },
+    "nus_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "c29eb6e1f729f12e64dc53a5d6e5511d19687db645bade55d422ecf58b0b6dfe"
+    },
+    "nya_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4c908640bf002392cd97817214c7cf386bc701ada5764377652ab7769553d1df"
+    },
+    "oci_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "dd70c559c6aef38a933829ce76c23a976501c256eb5990622f43b6150b078fc9"
+    },
+    "ory_Orya": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "93ae35f146c696230e12a8f0c2f834ce6c9fe9cba1855f1783034b91b4fe31a1"
+    },
+    "pag_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "0af7811d11d3dd2b884ae0d1b938e09585aff4f0f8ee1b68944a6e692d7f008c"
+    },
+    "pan_Guru": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6e0b68b46f53eece14c28d49ff746cc92964b0a966791e25ed7269c4755aab0a"
+    },
+    "pap_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a93e932c15e6ec653821c247627c4f58dd0110d1afdd5fd251f939c7eb3a5eda"
+    },
+    "pbt_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "89c061e5938a687fc701d4eeb9042022e1b65bad1a6d4eb74e1004a08645b459"
+    },
+    "pes_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "3ea1e922ad7892fdc638c9e95bbb503a465fb393b99b9c713409e0d278e33bac"
+    },
+    "plt_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ba58bde514a65e84bfda17673ae177aef790db4eac2426970e0e990fe4d5fbd9"
+    },
+    "pol_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e345fd7daca89c7648ecbf83759097090332f82d12bb26286b9c6e49f7fd0a2b"
+    },
+    "por_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b7f83abe53bcd704f8b9391304c4ac64e14144252247b82abb272bacabf508d6"
+    },
+    "prs_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a12d44d14290ebfeab6f2791537167ce24c070f1e5b4ae7f0ee8e8b011620a09"
+    },
+    "quy_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ff850e7ed5265e0c2baf9228df7db39aad6b545c6b93a9ba62f3051440121e7b"
+    },
+    "ron_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "17dcf59a3f75a3d18a13146f3d93562def7b6874d68bbf2f6e86ad2a540af39e"
+    },
+    "run_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "270b43c9beeb3a2ce79fb26a3087c53044755525eebf96943bcd6706fd359294"
+    },
+    "rus_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "626fc92c667ff7ac5b683f7bde3dfefc83239998c4974811254bc1a9bfd76231"
+    },
+    "sag_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "cc8a423f3bd9078f0920ccf08e449a4ac973a638c40e3dd4da590d49ed5e528b"
+    },
+    "sat_Olck": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e56c7db2470215b1f349bb047144296e13fca0c1ad5e18559291a7e36eed080a"
+    },
+    "scn_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "99a5d44b0e3474721f2b095d59003f4020f70d0d829f65b9d9d3923c86432309"
+    },
+    "sin_Sinh": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f5718cc579d837ae40c43a5b2f01535313e65573d9614f59f7997b74917a431d"
+    },
+    "slk_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d1bd3a6fb03e0695ff1ab02504bc14ae6380a64edc56e421c169b37d3ca4bf4f"
+    },
+    "slv_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "1a3d2055a78d3ece17537b7963b7678f82684e45f8f37a1affc6cdd97c5908ca"
+    },
+    "smo_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "8b3f68c2e9531efa9c6349a3aabf2ecbe96074acecbdb59481c6c0c016632cff"
+    },
+    "sna_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "516e58fa33a6c9b7ae66c9c8f3958d537376bfdc08482a2edfe96b9bf92325b9"
+    },
+    "snd_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "27b0a85cc4d251410474efe5e6fdbbde59a766f27239c8acc8a4757f69087835"
+    },
+    "som_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ee0de372bca883f1acceb9bc0beac62bb05b1088bdb54b70c38451da9db1c8c9"
+    },
+    "sot_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "34fb41cd97ea815fc694b194f6fd73c2d940caf044c9b7f00d6028d7abc283ee"
+    },
+    "spa_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4106daf7280fb5778a828b14ad72e4bc9815aee06b30aac8751a30f8df51c042"
+    },
+    "srd_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "c8ecf719eecec92f62ddffb79cdd1fe127cb2954f23c6199b4c0532713e11d9f"
+    },
+    "srp_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6988a2b562cf6bc2ce5b15c8a5a4a9bd2b0524ca461ea9aadc14af2b786f9a4d"
+    },
+    "ssw_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e50b007ff552d26f6bfbb81a035c27ed8513fc788e596ec2d44cbc48ac6a4a42"
+    },
+    "swe_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6969e5d1b510df3f84b60ebb272f95dbed40da41f6e4e9ca2e4a316d1dc761ee"
+    },
+    "swh_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "1a30f5ca4033b0607dd7c181ff8dec011208cab1c8462eda86496bcb1da281db"
+    },
+    "szl_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "76dc7b590f6aa4dd505c1efc087d24002a3e7ea19dadae4871c5e37ea3e98653"
+    },
+    "tam_Taml": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4e7d835afbb16bf4bfd31eb6e49ef78d88c07c227be633a104b7183f0e7628c2"
+    },
+    "taq_Tfng": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "d085f56f4737649f376aa9256864b7f9f0faa7c334010c95054253e41622d4c0"
+    },
+    "tat_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bf3ca067e7cd32e97a8f014975497b743e3508043b966bcb21919c7fd0270940"
+    },
+    "tel_Telu": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "ba9b1b1f68cc40bb52795264da4e85bcd1350b124b3d24914c6dd6586ec3d1e6"
+    },
+    "tgl_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6a6c7bab5eeb1a69010bced9126d6c314e45aa9a2739170a828f15e17695ece4"
+    },
+    "tir_Ethi": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bcaccfe1a8c56c088c86879bccb9b3fedcf65810eaa231c698a0f057b762b81c"
+    },
+    "tpi_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "8e0222a3ef7cfdeff0cf6e04ddae27dcd04c1e471b654987e51f0971f7990e2d"
+    },
+    "tsn_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "e4cb26b7578f1f8ddfe4deaa83a9c73b20ca6c09a0903db2fbd9b3863732ab7b"
+    },
+    "tso_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "3dacf18e3bfe57236bd898bc5738a5895eeb316a7ccfd8bedfa8824ab819d17a"
+    },
+    "tuk_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "5805e89b351be9c80cc17b069773b7176f6eada0e21d5f4144979b5422a79970"
+    },
+    "tum_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "1a0d9383ca5859579a121fb143c62d73a5e5591ffd1e161bc373ed11221ec525"
+    },
+    "tur_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "21fdbdaaf85a6c52ee0952ada53f5107112f3f33ff9060a49708034be434ff33"
+    },
+    "twi_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "16e620409f85a8f6fecb6f535ca8e85f086395924db782e886dfdc3567018948"
+    },
+    "tzm_Tfng": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4049c5f9353f20ee41da50b1c7fbaf87ae442c3a1a1a6630beccfc1f738d2b29"
+    },
+    "uig_Arab": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "a8f1a06bd2649f27d06eace23c28c056cc9715e70e3d3655d6f9b38323b6dc9b"
+    },
+    "ukr_Cyrl": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "bfd690a91681ebffd759b0de60be035292a1b77ce954e8bbc487c4fc50a171fb"
+    },
+    "umb_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6f5d25e5056dd1cf8392b1d75c6e539985118eb4cf2ec7a3672829b758fedfd6"
+    },
+    "uzn_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "6d3f039e03b5525deef16ac407a5cb0c6c1b932562a2d2673b715367c079ded1"
+    },
+    "vec_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "8e43c811e855079918764a3c8ebc7c6b5ed650d1b0b739f751a65d1007f09178"
+    },
+    "vie_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "4fb046ac5682daa719f1a3a37e3262b302e470d2b6b765bc64d25afcbdca7f7a"
+    },
+    "war_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "be40252269985d7a33064455c713b1eb58effc5505b0c81b846d8ab3cb950c79"
+    },
+    "wol_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "54d27c83693fae46afa9be6ba78014dd969ec438125ec2ba6ce6b385b2077924"
+    },
+    "xho_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "7fe51b64acffe6f474bdce43cff63d371267da1258262d71aed9a5f63ecd2c4b"
+    },
+    "ydd_Hebr": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "b82aaa1b35dac859e5a86732f426ddf114ddd0ff7f4c7bfc7e11ca514c606a05"
+    },
+    "yor_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "fbb1a6c186ca35807cd61b45025535385edaa08f0ced9f0b8e6c33240c4c9dc4"
+    },
+    "zsm_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "f69d2ff5de11682fae38da0fe5f76a69ac3ae8c5d93ae2d04d151a31a66fc9f3"
+    },
+    "zul_Latn": {
+      "n": 899,
+      "n_positive": 99,
+      "positive_rate": 0.110122,
+      "counts": {
+        "train": 450,
+        "dev": 180,
+        "test": 269
+      },
+      "split_sha256": "8d2e3e7da2e8844d71d07eaac1ecfc7e09f985bfec72c8828f7476db12c5bbcc"
+    }
+  }
+}

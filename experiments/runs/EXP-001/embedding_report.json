@@ -1,0 +1,71 @@
+{
+  "model_key": "encoder_minilm",
+  "hf_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "max_seq_length": 128,
+  "batch_size": 32,
+  "embedding_dim": 384,
+  "total_seconds": 1012.17,
+  "per_language": {
+    "am": {
+      "cached": false,
+      "seconds": 91.35
+    },
+    "ar": {
+      "cached": false,
+      "seconds": 74.31
+    },
+    "de": {
+      "cached": false,
+      "seconds": 99.68
+    },
+    "en": {
+      "cached": false,
+      "seconds": 47.58
+    },
+    "es": {
+      "cached": false,
+      "seconds": 93.21
+    },
+    "fr": {
+      "cached": false,
+      "seconds": 69.29
+    },
+    "he": {
+      "cached": false,
+      "seconds": 20.44
+    },
+    "hi": {
+      "cached": false,
+      "seconds": 93.46
+    },
+    "hin": {
+      "cached": false,
+      "seconds": 64.52
+    },
+    "it": {
+      "cached": false,
+      "seconds": 82.25
+    },
+    "ja": {
+      "cached": false,
+      "seconds": 60.87
+    },
+    "ru": {
+      "cached": false,
+      "seconds": 53.29
+    },
+    "tt": {
+      "cached": false,
+      "seconds": 72.67
+    },
+    "uk": {
+      "cached": false,
+      "seconds": 52.01
+    },
+    "zh": {
+      "cached": false,
+      "seconds": 37.24
+    }
+  }
+}

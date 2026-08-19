@@ -1,0 +1,175 @@
+{
+  "seed": 20260802,
+  "split_fractions": {
+    "train": 0.5,
+    "dev": 0.2,
+    "test": 0.3
+  },
+  "languages": {
+    "am": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "2b3eae1591ec19d6cbe965f415b89f4d6465f0407fac71c142198231845b93d4"
+    },
+    "ar": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "724fe99909baf11d965bde100cc0c8b68170878de8dab0283352e10bb9c75393"
+    },
+    "de": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "67e69267fcb2ed2365e8c850115521de7599bd7aa0908e8168f342c8cb4919b0"
+    },
+    "en": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "3ddbe862ff61cd494e2bfcac1d6bedacd3387873a8aefb0cf7111facd9831b0a"
+    },
+    "es": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "2dc81237516e5da82fd8529a01bfcc8f3720d22aa03e7e5b79f6666700a2a7c4"
+    },
+    "fr": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "c9301fcfc70279fda9665c10390c0d0ae96976c29d81343a57754e414ade3dff"
+    },
+    "he": {
+      "n": 2011,
+      "n_positive": 807,
+      "positive_rate": 0.401293,
+      "counts": {
+        "train": 1006,
+        "dev": 402,
+        "test": 603
+      },
+      "split_sha256": "6cee3ed5b6d0ca297b64613f633d0ed772db1696ca9602e1fe453f133e4c360b"
+    },
+    "hi": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "21d77d6b41ebb393230788b73c64bdb0bb40fd04bc0ab6185a1e6031a013cce1"
+    },
+    "hin": {
+      "n": 4363,
+      "n_positive": 2200,
+      "positive_rate": 0.50424,
+      "counts": {
+        "train": 2182,
+        "dev": 873,
+        "test": 1308
+      },
+      "split_sha256": "7f9a51e88be113ef4c406017f777cb4f4cf5f396c66644cc90a32aecddf6d22d"
+    },
+    "it": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "4faf1ba0a5b166bf0e296f8c18bce086432a5d6aff759b9072a45cc162eadf41"
+    },
+    "ja": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "3ae12cea74814fef99e4fb7b9dec65420d2a84806330d155c5be392ef398cbea"
+    },
+    "ru": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "e66b057ceb6d2d82ac4c279528397ca954a24fbc1fc4d0758a45bee416c96cbb"
+    },
+    "tt": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "357a516e572d4274a8d45b55db749ca1d90e6f408931f9a9494e7d55458df60c"
+    },
+    "uk": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "6208e35b9532d91796838f3dd19eee0339198b0fc4490dacb780a787e5c58452"
+    },
+    "zh": {
+      "n": 5000,
+      "n_positive": 2500,
+      "positive_rate": 0.5,
+      "counts": {
+        "train": 2500,
+        "dev": 1000,
+        "test": 1500
+      },
+      "split_sha256": "677b300a5fdda9735cd8452262c9440755a7e517aab749b5b2fa7e5c045a5be7"
+    }
+  }
+}

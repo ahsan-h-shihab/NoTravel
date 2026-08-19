@@ -1,0 +1,9 @@
+{
+  "source_language": "en",
+  "C": 1.0,
+  "seed": 20260802,
+  "n_train": 2500,
+  "source_dev_auroc": 0.9857564244377114,
+  "tau_source": 0.4656289870509488,
+  "objective": "f1"
+}

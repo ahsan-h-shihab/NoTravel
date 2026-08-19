@@ -1,0 +1,104 @@
+{
+  "exp_id": "EXP-009",
+  "budget": 0.05,
+  "preregistered_criteria": {
+    "success": "violation>=0.5 AND >=2 languages with AUROC>=0.8 violating",
+    "failure": "violation<=0.2 AND no strong violator",
+    "mixed": "violations only where AUROC<0.7",
+    "instrument_failure": "source AUROC<0.7"
+  },
+  "verdicts": {
+    "clf_unitary_xlmr": {
+      "verdict": "SUCCESS",
+      "n_target_languages": 14,
+      "violation_rate": 0.6429,
+      "n_strong_auroc_languages": 4,
+      "n_strong_auroc_violators": 3,
+      "strong_violators": [
+        "es",
+        "it",
+        "ru"
+      ],
+      "violations_confined_to_weak": false,
+      "source_test_auroc": 0.9944,
+      "median_target_auroc": 0.6474
+    }
+  },
+  "model_reports": {
+    "clf_unitary_xlmr": {
+      "model_key": "clf_unitary_xlmr",
+      "hf_id": "unitary/multilingual-toxic-xlm-roberta",
+      "revision": "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5",
+      "positive_class_index": 0,
+      "activation": "sigmoid",
+      "id2label": {
+        "0": "toxic"
+      },
+      "max_seq_length": 128,
+      "batch_size": 32,
+      "total_seconds": 6513.58,
+      "per_language": {
+        "am": {
+          "cached": false,
+          "seconds": 390.53
+        },
+        "ar": {
+          "cached": false,
+          "seconds": 557.2
+        },
+        "de": {
+          "cached": false,
+          "seconds": 667.2
+        },
+        "en": {
+          "cached": false,
+          "seconds": 316.66
+        },
+        "es": {
+          "cached": false,
+          "seconds": 831.11
+        },
+        "fr": {
+          "cached": false,
+          "seconds": 619.51
+        },
+        "he": {
+          "cached": false,
+          "seconds": 223.5
+        },
+        "hi": {
+          "cached": false,
+          "seconds": 472.14
+        },
+        "hin": {
+          "cached": false,
+          "seconds": 516.77
+        },
+        "it": {
+          "cached": false,
+          "seconds": 419.08
+        },
+        "ja": {
+          "cached": false,
+          "seconds": 349.56
+        },
+        "ru": {
+          "cached": false,
+          "seconds": 274.97
+        },
+        "tt": {
+          "cached": false,
+          "seconds": 436.13
+        },
+        "uk": {
+          "cached": false,
+          "seconds": 251.74
+        },
+        "zh": {
+          "cached": false,
+          "seconds": 187.48
+        }
+      }
+    }
+  }
+}

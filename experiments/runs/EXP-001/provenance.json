@@ -1,0 +1,83 @@
+{
+  "experiment_id": "EXP-001",
+  "objective": "Establish whether per-language optimal decision thresholds differ from a source-tuned threshold for a fixed multilingual classifier, and validate the Arm-B pipeline as a scientific instrument.",
+  "hypothesis": "H1 (pilot scale)",
+  "dataset": "textdetox/multilingual_toxicity_dataset",
+  "dataset_version": "01907546324b0330d2d8b7669648cc18823323e5",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_version": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "config": {
+    "encoder_key": "encoder_minilm",
+    "source_language": "en",
+    "threshold_objective": "f1",
+    "seed": 20260802,
+    "split_fractions": {
+      "train": 0.5,
+      "dev": 0.2,
+      "test": 0.3
+    },
+    "threshold_selected_on": "dev",
+    "evaluated_on": "test",
+    "source_dev_auroc_gate": 0.75,
+    "target_auroc_degenerate": 0.55
+  },
+  "random_seed": 20260802,
+  "software_versions": {
+    "python": "3.12.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "sentence-transformers": "5.1.1"
+  },
+  "git_commit": "99f13f135cb12cba61386390559267dbcb4f55d5",
+  "git_dirty": true,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "machine": "AMD64",
+    "logical_cores": 6,
+    "python_executable": "D:\\python\\python.exe"
+  },
+  "started_at": "2026-08-02T01:27:10+00:00",
+  "finished_at": "2026-08-02T01:44:35+00:00",
+  "wall_clock_s": 1044.57,
+  "outputs": [
+    {
+      "path": "results/tables/EXP-001_pilot_per_language.csv",
+      "sha256": "b612e255ba388d4a59f76f2164d0d4ebd548f6436100b23e6c6e968372c6cea7",
+      "bytes": 2392
+    },
+    {
+      "path": "experiments/runs/EXP-001/per_example_scores.parquet",
+      "sha256": "f3cfebf51b18c5ce65570fd3efd44bb9045a2664c28e0ee0aac1890adc07a1be",
+      "bytes": 356404
+    },
+    {
+      "path": "experiments/runs/EXP-001/head.json",
+      "sha256": "41fa47c3ffbc876bafb79c1b82a2cb315e50fb09a5a5685766942c882e812af9",
+      "bytes": 189
+    },
+    {
+      "path": "experiments/runs/EXP-001/summary.json",
+      "sha256": "3aa8de0adee6e5b62d86242c6bd875aad5a02d92da366793783611863e4f2692",
+      "bytes": 487
+    },
+    {
+      "path": "experiments/runs/EXP-001/embedding_report.json",
+      "sha256": "3f2258d1a984d9ab19a714c31e8e0610638094f117f966893855c594caefeecc",
+      "bytes": 1336
+    },
+    {
+      "path": "data/processed/split_manifest.json",
+      "sha256": "0bbf124c985ab60b7fc93b5d9a3f908b74191d89557a68a24272c2f9fa252acb",
+      "bytes": 4368
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "Pipeline validated (source dev AUROC 0.9858 >= 0.75; 1/14 degenerate languages). Median per-language F1 gain from own-threshold calibration: 0.0507; max 0.3415; median |tau_lang - tau_source| = 0.2785."
+}

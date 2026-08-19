@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper below."
+title: "NoTravel: Cross-Lingual Threshold Transfer in Multilingual AI"
+abstract: >-
+  Code, pinned dataset and model revisions, per-example scores and the analysis
+  pipeline that produce every reported number, table, figure and statistical
+  test in the paper.
+type: software
+authors:
+  - given-names: "Ahsan Habib"
+    family-names: "Shihab"
+    orcid: "https://orcid.org/0009-0008-1157-6335"
+    affiliation: "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty, Kazakhstan"
+  - given-names: "Aman"
+    family-names: "Mussa"
+    orcid: "https://orcid.org/0009-0001-9972-7677"
+    affiliation: "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty, Kazakhstan"
+  - given-names: "Madina"
+    family-names: "Mansurova"
+    orcid: "https://orcid.org/0000-0002-9680-2758"
+    affiliation: "Faculty of Mechanics and Mathematics, Al-Farabi Kazakh National University, Almaty, Kazakhstan"
+  - given-names: "Amir"
+    family-names: "Mosavi"
+    orcid: "https://orcid.org/0000-0003-4842-0613"
+    affiliation: "Faculty of Informatics, Obuda University, Budapest, Hungary"
+  - given-names: "Assel"
+    family-names: "Ospan"
+    orcid: "https://orcid.org/0000-0002-1860-6997"
+    affiliation: "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty, Kazakhstan"
+  - given-names: "Talshyn"
+    family-names: "Sarsembayeva"
+    orcid: "https://orcid.org/0000-0001-7668-2640"
+    affiliation: "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty, Kazakhstan"
+preferred-citation:
+  type: article
+  title: >-
+    The Operating Point Does Not Travel: Cross-Lingual Threshold Transfer Fails
+    by Over- and Under-Firing in Multilingual Text Classifiers
+  journal: "IEEE Access"
+  year: 2026
+  authors:
+    - given-names: "Ahsan Habib"
+      family-names: "Shihab"
+      orcid: "https://orcid.org/0009-0008-1157-6335"
+    - given-names: "Aman"
+      family-names: "Mussa"
+      orcid: "https://orcid.org/0009-0001-9972-7677"
+    - given-names: "Madina"
+      family-names: "Mansurova"
+      orcid: "https://orcid.org/0000-0002-9680-2758"
+    - given-names: "Amir"
+      family-names: "Mosavi"
+      orcid: "https://orcid.org/0000-0003-4842-0613"
+    - given-names: "Assel"
+      family-names: "Ospan"
+      orcid: "https://orcid.org/0000-0002-1860-6997"
+    - given-names: "Talshyn"
+      family-names: "Sarsembayeva"
+      orcid: "https://orcid.org/0000-0001-7668-2640"

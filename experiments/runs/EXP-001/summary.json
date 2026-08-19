@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-001",
+  "source_language": "en",
+  "tau_source": 0.4656,
+  "source_dev_auroc": 0.9858,
+  "n_target_languages": 14,
+  "n_degenerate_auroc": 1,
+  "degenerate_fraction": 0.0714,
+  "instrument_failed": false,
+  "median_f1_gap": 0.0507,
+  "mean_f1_gap": 0.091,
+  "max_f1_gap": 0.3415,
+  "median_abs_threshold_diff": 0.2785,
+  "max_abs_threshold_diff": 0.4244,
+  "median_test_auroc": 0.7109,
+  "min_test_auroc": 0.5185,
+  "max_test_auroc": 0.9069
+}

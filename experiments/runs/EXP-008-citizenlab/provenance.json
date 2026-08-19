@@ -1,0 +1,58 @@
+{
+  "experiment_id": "EXP-008-citizenlab",
+  "objective": "ARM A: does operating-point transfer fail in real deployed multilingual classifiers, not only in a frozen-encoder probe?",
+  "hypothesis": "H1 external validity",
+  "dataset": "textdetox/multilingual_toxicity_dataset",
+  "dataset_version": "01907546324b0330d2d8b7669648cc18823323e5",
+  "model": "clf_citizenlab_distilbert",
+  "model_version": "see per-model reports",
+  "config": {
+    "exp_id": "EXP-008-citizenlab",
+    "models": [
+      "clf_citizenlab_distilbert"
+    ],
+    "source": "en",
+    "target_fpr": 0.05,
+    "bootstrap": 300,
+    "seed": 20260802
+  },
+  "random_seed": 20260802,
+  "software_versions": {
+    "python": "3.12.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "sentence-transformers": "5.1.1"
+  },
+  "git_commit": "879905c70e86573937be63d6a097705287c3fcdc",
+  "git_dirty": false,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "machine": "AMD64",
+    "logical_cores": 6,
+    "python_executable": "D:\\python\\python.exe"
+  },
+  "started_at": "2026-08-02T12:23:12+00:00",
+  "finished_at": "2026-08-02T13:13:36+00:00",
+  "wall_clock_s": 3023.81,
+  "outputs": [
+    {
+      "path": "results/tables/EXP-008-citizenlab_arm_a.csv",
+      "sha256": "fba9afd659c77618ddc82b585d150b7910b4b06c063a848a7aca333f139cfb4e",
+      "bytes": 115968
+    },
+    {
+      "path": "experiments/runs/EXP-008-citizenlab/summary.json",
+      "sha256": "ce65391931fea45cfb320b1b086bc53758e331a23607f3dfc7a0248b6be42caa",
+      "bytes": 2490
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "clf_citizenlab_distilbert=MIXED (violation 0.2143)"
+}

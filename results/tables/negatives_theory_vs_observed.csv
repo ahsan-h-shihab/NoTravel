@@ -1,0 +1,19 @@
+regime,source,alpha,n_neg,expected_fp,relative_se,predicted_usable,observed_violation_rate
+few-label k=8 (random),EXP-002,0.05,4.0,0.2,2.18,False,1.0
+few-label k=8 (stratified),EXP-002,0.05,4.0,0.2,2.18,False,1.0
+few-label k=16 (stratified),EXP-002,0.05,8.0,0.4,1.54,False,1.0
+few-label k=16 (random),EXP-002,0.05,8.0,0.4,1.54,False,1.0
+few-label k=32 (random),EXP-002,0.05,16.0,0.8,1.09,False,0.429
+few-label k=32 (stratified),EXP-002,0.05,16.0,0.8,1.09,False,0.429
+few-label k=64 (random),EXP-002,0.05,32.0,1.6,0.77,False,0.357
+few-label k=64 (stratified),EXP-002,0.05,32.0,1.6,0.77,False,0.429
+few-label k=128 (stratified),EXP-002,0.05,64.0,3.2,0.54,False,0.643
+few-label k=128 (random),EXP-002,0.05,64.0,3.2,0.54,False,0.5
+full per-language calibration @ budget 0.01,EXP-007,0.01,494.5,4.94,0.45,False,0.571
+few-label k=256 (stratified),EXP-002,0.05,128.0,6.4,0.39,False,0.429
+few-label k=256 (random),EXP-002,0.05,128.0,6.4,0.39,False,0.429
+full per-language calibration (SIB-200),EXP-006,0.05,161.0,8.05,0.34,False,0.376
+full per-language calibration (toxicity),EXP-002,0.05,490.5,24.53,0.2,True,0.143
+full per-language calibration @ budget 0.05,EXP-007,0.05,494.5,24.72,0.2,True,0.143
+full per-language calibration @ budget 0.1,EXP-007,0.1,494.5,49.45,0.13,True,0.214
+full per-language calibration @ budget 0.2,EXP-007,0.2,494.5,98.9,0.09,True,0.143

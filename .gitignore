@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Datasets and model weights: downloaded at run time from the revision
+# pinned in configs/resources.yaml, never committed.
+data/cache/
+**/.cache/
+data/models/
+*.safetensors
+*.bin
+*.onnx
+*.pt
+
+# Embedding matrices, regenerated from the pinned model and dataset
+# revisions by scripts/reproduce_all.py.
+data/processed/**/*.npy
+data/processed/**/*.npz
+
+# Generated at run time.
+# Preview rasters of the figures; the PDF is the tracked artefact.
+results/figures/*.png
+results/raw_outputs/
+# The runner's own per-invocation log.
+experiments/logs/reproduce_all_report.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,280 @@
+{
+  "exp_id": "EXP-002",
+  "task": "toxicity",
+  "encoder": "encoder_minilm",
+  "source_language": "en",
+  "objective": "target_fpr",
+  "target_fpr": [
+    0.05
+  ],
+  "n_languages": 15,
+  "source_dev_auroc": 0.9858,
+  "head_train_prior": 0.5124,
+  "tau_source": 0.6092,
+  "median_test_auroc": 0.7063,
+  "n_degenerate_rows": 36,
+  "degenerate_by_strategy": {
+    "bbse": 3,
+    "pooled_global": 1,
+    "sld_em": 12,
+    "worstcase_global": 20
+  },
+  "headline_metric": "FPR-budget compliance and recall at FPR<=0.05",
+  "all_budgets": [
+    0.05
+  ],
+  "by_strategy": {
+    "bbse": {
+      "budget_violation_rate": 0.7857,
+      "violation_rate_ci95": [
+        0.5241,
+        0.9243
+      ],
+      "median_fpr": 0.1068,
+      "max_fpr": 0.5274,
+      "median_recall": 0.4245,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_128_rand": {
+      "budget_violation_rate": 0.5,
+      "violation_rate_ci95": [
+        0.268,
+        0.732
+      ],
+      "median_fpr": 0.0508,
+      "max_fpr": 0.074,
+      "median_recall": 0.2441,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_128_strat": {
+      "budget_violation_rate": 0.6429,
+      "violation_rate_ci95": [
+        0.3876,
+        0.8366
+      ],
+      "median_fpr": 0.052,
+      "max_fpr": 0.0692,
+      "median_recall": 0.2187,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_16_rand": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.0839,
+      "max_fpr": 0.1355,
+      "median_recall": 0.2492,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_16_strat": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.0905,
+      "max_fpr": 0.1267,
+      "median_recall": 0.2689,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_256_rand": {
+      "budget_violation_rate": 0.4286,
+      "violation_rate_ci95": [
+        0.2138,
+        0.6741
+      ],
+      "median_fpr": 0.0483,
+      "max_fpr": 0.0726,
+      "median_recall": 0.2226,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_256_strat": {
+      "budget_violation_rate": 0.4286,
+      "violation_rate_ci95": [
+        0.2138,
+        0.6741
+      ],
+      "median_fpr": 0.0475,
+      "max_fpr": 0.0683,
+      "median_recall": 0.2235,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_32_rand": {
+      "budget_violation_rate": 0.4286,
+      "violation_rate_ci95": [
+        0.2138,
+        0.6741
+      ],
+      "median_fpr": 0.049,
+      "max_fpr": 0.0741,
+      "median_recall": 0.1978,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_32_strat": {
+      "budget_violation_rate": 0.4286,
+      "violation_rate_ci95": [
+        0.2138,
+        0.6741
+      ],
+      "median_fpr": 0.0484,
+      "max_fpr": 0.0797,
+      "median_recall": 0.1991,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_64_rand": {
+      "budget_violation_rate": 0.3571,
+      "violation_rate_ci95": [
+        0.1634,
+        0.6124
+      ],
+      "median_fpr": 0.0469,
+      "max_fpr": 0.0668,
+      "median_recall": 0.2085,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_64_strat": {
+      "budget_violation_rate": 0.4286,
+      "violation_rate_ci95": [
+        0.2138,
+        0.6741
+      ],
+      "median_fpr": 0.0473,
+      "max_fpr": 0.07,
+      "median_recall": 0.2229,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_8_rand": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.1662,
+      "max_fpr": 0.2157,
+      "median_recall": 0.4107,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "few_label_8_strat": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.1416,
+      "max_fpr": 0.1814,
+      "median_recall": 0.3456,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "fixed_half": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.248,
+      "max_fpr": 0.5957,
+      "median_recall": 0.61,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "pooled_global": {
+      "budget_violation_rate": 0.2857,
+      "violation_rate_ci95": [
+        0.1172,
+        0.5465
+      ],
+      "median_fpr": 0.0383,
+      "max_fpr": 0.2316,
+      "median_recall": 0.241,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "quantile_match": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.3123,
+      "max_fpr": 0.4672,
+      "median_recall": 0.61,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "sld_em": {
+      "budget_violation_rate": 0.7143,
+      "violation_rate_ci95": [
+        0.4535,
+        0.8828
+      ],
+      "median_fpr": 0.1256,
+      "max_fpr": 0.6439,
+      "median_recall": 0.4404,
+      "n_degenerate": 2,
+      "n_languages": 14
+    },
+    "source_global": {
+      "budget_violation_rate": 1.0,
+      "violation_rate_ci95": [
+        0.7847,
+        1.0
+      ],
+      "median_fpr": 0.1725,
+      "max_fpr": 0.4913,
+      "median_recall": 0.5037,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "target_full": {
+      "budget_violation_rate": 0.1429,
+      "violation_rate_ci95": [
+        0.0401,
+        0.3994
+      ],
+      "median_fpr": 0.0451,
+      "max_fpr": 0.0535,
+      "median_recall": 0.2226,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "test_oracle_unachievable": {
+      "budget_violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.2153
+      ],
+      "median_fpr": 0.0493,
+      "max_fpr": 0.05,
+      "median_recall": 0.2425,
+      "n_degenerate": 0,
+      "n_languages": 14
+    },
+    "worstcase_global": {
+      "budget_violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.2153
+      ],
+      "median_fpr": 0.0054,
+      "max_fpr": 0.0472,
+      "median_recall": 0.071,
+      "n_degenerate": 2,
+      "n_languages": 14
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "experiment_id": "EXP-004",
+  "objective": "Measure the operating-point cost of reusing a en-tuned decision threshold across languages, and how much of it label-free and few-label adaptation recover (toxicity, encoder_e5_small).",
+  "hypothesis": "H1/H2/H3",
+  "dataset": "textdetox/multilingual_toxicity_dataset",
+  "dataset_version": "01907546324b0330d2d8b7669648cc18823323e5",
+  "model": "intfloat/multilingual-e5-small",
+  "model_version": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "config": {
+    "exp_id": "EXP-004",
+    "task": "toxicity",
+    "encoder": "encoder_e5_small",
+    "source": "en",
+    "objective": "target_fpr",
+    "target_fpr": 0.05,
+    "positive_label": "health",
+    "languages": null,
+    "sib200_all_configs": false,
+    "k_values": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "few_label_repeats": 25,
+    "bootstrap": 300,
+    "prevalence": null,
+    "seed": 20260802,
+    "resolved_source": "en"
+  },
+  "random_seed": 20260802,
+  "software_versions": {
+    "python": "3.12.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "sentence-transformers": "5.1.1"
+  },
+  "git_commit": "32c81bcbe7e08ccdbcb64462748b690347343e49",
+  "git_dirty": false,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "machine": "AMD64",
+    "logical_cores": 6,
+    "python_executable": "D:\\python\\python.exe"
+  },
+  "started_at": "2026-08-02T03:37:36+00:00",
+  "finished_at": "2026-08-02T03:55:57+00:00",
+  "wall_clock_s": 1101.34,
+  "outputs": [
+    {
+      "path": "results/tables/EXP-004_threshold_study.csv",
+      "sha256": "3eb0d8d69b38b9b3cc46a91e98419798e2d42ff1b99f12544a92c76892c217af",
+      "bytes": 109180
+    },
+    {
+      "path": "experiments/runs/EXP-004/per_example_scores.parquet",
+      "sha256": "70e3bf3f65387de926f6c06dc2fd6b35b426d0fba20c0932156723a854a3eede",
+      "bytes": 356468
+    },
+    {
+      "path": "experiments/runs/EXP-004/summary.json",
+      "sha256": "7a297898921c38e864dab06e7e77d7ffc7d2d475bfdc75b2f953cc0a423032e3",
+      "bytes": 4006
+    },
+    {
+      "path": "experiments/runs/EXP-004/embedding_report.json",
+      "sha256": "e15690daea4a637c8708e7c4b57cd882dfa0ce586dfad16b14ee552356329f5e",
+      "bytes": 1310
+    },
+    {
+      "path": "data/processed/split_manifest_toxicity.json",
+      "sha256": "0bbf124c985ab60b7fc93b5d9a3f908b74191d89557a68a24272c2f9fa252acb",
+      "bytes": 4368
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "15 languages, FPR budget 0.05. Source-tuned global threshold violates the budget in 71.4% of target languages (median FPR 0.0555, max 0.1765)."
+}

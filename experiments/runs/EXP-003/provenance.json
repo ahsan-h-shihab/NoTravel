@@ -1,0 +1,91 @@
+{
+  "experiment_id": "EXP-003",
+  "objective": "Measure the operating-point cost of reusing a en-tuned decision threshold across languages, and how much of it label-free and few-label adaptation recover (toxicity, encoder_minilm).",
+  "hypothesis": "H1/H2/H3",
+  "dataset": "textdetox/multilingual_toxicity_dataset",
+  "dataset_version": "01907546324b0330d2d8b7669648cc18823323e5",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_version": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "config": {
+    "exp_id": "EXP-003",
+    "task": "toxicity",
+    "encoder": "encoder_minilm",
+    "source": "en",
+    "objective": "f1",
+    "target_fpr": null,
+    "positive_label": "health",
+    "languages": null,
+    "k_values": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "few_label_repeats": 25,
+    "bootstrap": 1000,
+    "prevalence": [
+      0.5,
+      0.25,
+      0.1,
+      0.05
+    ],
+    "seed": 20260802,
+    "resolved_source": "en"
+  },
+  "random_seed": 20260802,
+  "software_versions": {
+    "python": "3.12.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "sentence-transformers": "5.1.1"
+  },
+  "git_commit": "09ee82a1fd67b1772e7729a2b64704c0dd6de012",
+  "git_dirty": true,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "machine": "AMD64",
+    "logical_cores": 6,
+    "python_executable": "D:\\python\\python.exe"
+  },
+  "started_at": "2026-08-02T02:01:53+00:00",
+  "finished_at": "2026-08-02T02:03:29+00:00",
+  "wall_clock_s": 96.64,
+  "outputs": [
+    {
+      "path": "results/tables/EXP-003_threshold_study.csv",
+      "sha256": "02892060caa86d3838da0fce89a1419691f7fecb80afbfdb3401344ebb726ff5",
+      "bytes": 428926
+    },
+    {
+      "path": "experiments/runs/EXP-003/per_example_scores.parquet",
+      "sha256": "c9aa526be0a8dabcc382119abc87cde5939aa82abaf5d2c6e901f53ca9b69189",
+      "bytes": 356420
+    },
+    {
+      "path": "experiments/runs/EXP-003/summary.json",
+      "sha256": "38cc2e8ad5e56890e7ddb7bb60fc94a883db6a0b024d0c9c0ab44573f4ba3b36",
+      "bytes": 3259
+    },
+    {
+      "path": "experiments/runs/EXP-003/embedding_report.json",
+      "sha256": "6efc68be4b0e63c1418057c82043d2ee6678a9db5febfdb621c03f75beff304e",
+      "bytes": 1287
+    },
+    {
+      "path": "data/processed/split_manifest_toxicity.json",
+      "sha256": "0bbf124c985ab60b7fc93b5d9a3f908b74191d89557a68a24272c2f9fa252acb",
+      "bytes": 4368
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "15 languages. Status-quo source-tuned global threshold costs a median 0.0532 F1 relative to per-language calibration; max 0.3572. 110 degenerate thresholds observed."
+}

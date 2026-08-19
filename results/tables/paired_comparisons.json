@@ -1,0 +1,126 @@
+[
+  {
+    "question": "Does calibrating on other languages beat calibrating on one?",
+    "strategy_a": "pooled_global",
+    "strategy_b": "source_global",
+    "n_languages": 14,
+    "fpr": {
+      "median_difference": -0.1326,
+      "ci95": [
+        -0.1653,
+        -0.098
+      ],
+      "n_favouring_a": 14,
+      "wilcoxon_p": 0.00012
+    },
+    "recall": {
+      "median_difference": -0.2446,
+      "ci95": [
+        -0.2774,
+        -0.2275
+      ],
+      "n_favouring_a": 0,
+      "wilcoxon_p": 0.00012
+    },
+    "violation_rate_a": 0.2857,
+    "violation_rate_b": 1.0,
+    "effect_in_decision_units": {
+      "median_over_budget_multiple_a": 0.77,
+      "median_over_budget_multiple_b": 3.45
+    },
+    "caveat": "Languages are not independent (shared families, scripts, encoder capacity); effective n is below the nominal pair count."
+  },
+  {
+    "question": "Does per-language calibration beat pooled calibration?",
+    "strategy_a": "target_full",
+    "strategy_b": "pooled_global",
+    "n_languages": 14,
+    "fpr": {
+      "median_difference": 0.0045,
+      "ci95": [
+        -0.0041,
+        0.0159
+      ],
+      "n_favouring_a": 4,
+      "wilcoxon_p": 0.47023
+    },
+    "recall": {
+      "median_difference": 0.0177,
+      "ci95": [
+        -0.0114,
+        0.0414
+      ],
+      "n_favouring_a": 10,
+      "wilcoxon_p": 0.35754
+    },
+    "violation_rate_a": 0.1429,
+    "violation_rate_b": 0.2857,
+    "effect_in_decision_units": {
+      "median_over_budget_multiple_a": 0.9,
+      "median_over_budget_multiple_b": 0.77
+    },
+    "caveat": "Languages are not independent (shared families, scripts, encoder capacity); effective n is below the nominal pair count."
+  },
+  {
+    "question": "Does per-language calibration beat the status quo?",
+    "strategy_a": "target_full",
+    "strategy_b": "source_global",
+    "n_languages": 14,
+    "fpr": {
+      "median_difference": -0.1313,
+      "ci95": [
+        -0.1662,
+        -0.0801
+      ],
+      "n_favouring_a": 14,
+      "wilcoxon_p": 0.00012
+    },
+    "recall": {
+      "median_difference": -0.2314,
+      "ci95": [
+        -0.2824,
+        -0.134
+      ],
+      "n_favouring_a": 0,
+      "wilcoxon_p": 0.00012
+    },
+    "violation_rate_a": 0.1429,
+    "violation_rate_b": 1.0,
+    "effect_in_decision_units": {
+      "median_over_budget_multiple_a": 0.9,
+      "median_over_budget_multiple_b": 3.45
+    },
+    "caveat": "Languages are not independent (shared families, scripts, encoder capacity); effective n is below the nominal pair count."
+  },
+  {
+    "question": "Does label-free quantile matching beat doing nothing?",
+    "strategy_a": "quantile_match",
+    "strategy_b": "source_global",
+    "n_languages": 14,
+    "fpr": {
+      "median_difference": 0.0972,
+      "ci95": [
+        0.0331,
+        0.2083
+      ],
+      "n_favouring_a": 3,
+      "wilcoxon_p": 0.00305
+    },
+    "recall": {
+      "median_difference": 0.1431,
+      "ci95": [
+        0.0608,
+        0.2326
+      ],
+      "n_favouring_a": 11,
+      "wilcoxon_p": 0.00305
+    },
+    "violation_rate_a": 1.0,
+    "violation_rate_b": 1.0,
+    "effect_in_decision_units": {
+      "median_over_budget_multiple_a": 6.25,
+      "median_over_budget_multiple_b": 3.45
+    },
+    "caveat": "Languages are not independent (shared families, scripts, encoder capacity); effective n is below the nominal pair count."
+  }
+]

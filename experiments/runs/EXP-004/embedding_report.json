@@ -1,0 +1,71 @@
+{
+  "model_key": "encoder_e5_small",
+  "hf_id": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "max_seq_length": 128,
+  "batch_size": 32,
+  "embedding_dim": 384,
+  "total_seconds": 1059.23,
+  "per_language": {
+    "am": {
+      "cached": false,
+      "seconds": 89.79
+    },
+    "ar": {
+      "cached": false,
+      "seconds": 78.84
+    },
+    "de": {
+      "cached": false,
+      "seconds": 106.46
+    },
+    "en": {
+      "cached": false,
+      "seconds": 51.09
+    },
+    "es": {
+      "cached": false,
+      "seconds": 100.67
+    },
+    "fr": {
+      "cached": false,
+      "seconds": 70.94
+    },
+    "he": {
+      "cached": false,
+      "seconds": 22.57
+    },
+    "hi": {
+      "cached": false,
+      "seconds": 93.11
+    },
+    "hin": {
+      "cached": false,
+      "seconds": 67.15
+    },
+    "it": {
+      "cached": false,
+      "seconds": 85.76
+    },
+    "ja": {
+      "cached": false,
+      "seconds": 66.86
+    },
+    "ru": {
+      "cached": false,
+      "seconds": 57.19
+    },
+    "tt": {
+      "cached": false,
+      "seconds": 74.38
+    },
+    "uk": {
+      "cached": false,
+      "seconds": 54.12
+    },
+    "zh": {
+      "cached": false,
+      "seconds": 40.3
+    }
+  }
+}

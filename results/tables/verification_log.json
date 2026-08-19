@@ -1,0 +1,56 @@
+[
+  {
+    "check": "EXP-002 / tau_source",
+    "independent": 0.6051,
+    "pipeline": 0.6092,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-002 / violation_rate",
+    "independent": 1.0,
+    "pipeline": 1.0,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-002 / median_fpr",
+    "independent": 0.1735,
+    "pipeline": 0.1725,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-002 / max_fpr",
+    "independent": 0.498,
+    "pipeline": 0.4913,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-002 / median_recall",
+    "independent": 0.5057,
+    "pipeline": 0.5037,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-002 / n_languages",
+    "independent": 14,
+    "pipeline": 14,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-001 / n_degenerate_languages (F1, expect 6)",
+    "independent": 6,
+    "pipeline": 6,
+    "status": "AGREE"
+  },
+  {
+    "check": "EXP-001 / Amharic predicted-positive rate (expect 0.987)",
+    "independent": 0.991,
+    "pipeline": 0.987,
+    "status": "AGREE"
+  },
+  {
+    "check": "Wilson CI lower bound for 14/14 (expect 0.78)",
+    "independent": 0.78,
+    "pipeline": 0.78,
+    "status": "AGREE"
+  }
+]

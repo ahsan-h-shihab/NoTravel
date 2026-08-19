@@ -1,0 +1,100 @@
+{
+  "exp_id": "EXP-008-citizenlab",
+  "budget": 0.05,
+  "preregistered_criteria": {
+    "success": "violation>=0.5 AND >=2 languages with AUROC>=0.8 violating",
+    "failure": "violation<=0.2 AND no strong violator",
+    "mixed": "violations only where AUROC<0.7",
+    "instrument_failure": "source AUROC<0.7"
+  },
+  "verdicts": {
+    "clf_citizenlab_distilbert": {
+      "verdict": "MIXED",
+      "n_target_languages": 14,
+      "violation_rate": 0.2143,
+      "n_strong_auroc_languages": 1,
+      "n_strong_auroc_violators": 0,
+      "strong_violators": [],
+      "violations_confined_to_weak": false,
+      "source_test_auroc": 0.9252,
+      "median_target_auroc": 0.6415
+    }
+  },
+  "model_reports": {
+    "clf_citizenlab_distilbert": {
+      "model_key": "clf_citizenlab_distilbert",
+      "hf_id": "citizenlab/distilbert-base-multilingual-cased-toxicity",
+      "revision": "b4532a8b095d1886a7b5dff818331ecc88a855ae",
+      "positive_class_index": 0,
+      "id2label": {
+        "0": "toxic",
+        "1": "not_toxic"
+      },
+      "max_seq_length": 128,
+      "batch_size": 32,
+      "total_seconds": 2980.56,
+      "per_language": {
+        "am": {
+          "cached": false,
+          "seconds": 108.97
+        },
+        "ar": {
+          "cached": false,
+          "seconds": 302.07
+        },
+        "de": {
+          "cached": false,
+          "seconds": 253.34
+        },
+        "en": {
+          "cached": false,
+          "seconds": 112.85
+        },
+        "es": {
+          "cached": false,
+          "seconds": 278.96
+        },
+        "fr": {
+          "cached": false,
+          "seconds": 210.32
+        },
+        "he": {
+          "cached": false,
+          "seconds": 90.91
+        },
+        "hi": {
+          "cached": false,
+          "seconds": 294.13
+        },
+        "hin": {
+          "cached": false,
+          "seconds": 251.6
+        },
+        "it": {
+          "cached": false,
+          "seconds": 216.14
+        },
+        "ja": {
+          "cached": false,
+          "seconds": 223.06
+        },
+        "ru": {
+          "cached": false,
+          "seconds": 156.86
+        },
+        "tt": {
+          "cached": false,
+          "seconds": 221.4
+        },
+        "uk": {
+          "cached": false,
+          "seconds": 142.09
+        },
+        "zh": {
+          "cached": false,
+          "seconds": 117.86
+        }
+      }
+    }
+  }
+}

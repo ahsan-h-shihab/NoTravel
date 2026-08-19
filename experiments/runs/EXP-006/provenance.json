@@ -1,0 +1,87 @@
+{
+  "experiment_id": "EXP-006",
+  "objective": "Measure the operating-point cost of reusing a eng_Latn-tuned decision threshold across languages, and how much of it label-free and few-label adaptation recover (sib200, encoder_minilm).",
+  "hypothesis": "H1/H2/H3",
+  "dataset": "mteb/sib200",
+  "dataset_version": "83d0320451aff3cf268beb963bf6b5f2f0bcbc3a",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_version": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "config": {
+    "exp_id": "EXP-006",
+    "task": "sib200",
+    "encoder": "encoder_minilm",
+    "source": "eng_Latn",
+    "objective": "target_fpr",
+    "target_fpr": 0.05,
+    "positive_label": "health",
+    "languages": null,
+    "sib200_all_configs": false,
+    "k_values": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "few_label_repeats": 25,
+    "bootstrap": 400,
+    "prevalence": null,
+    "seed": 20260802,
+    "resolved_source": "eng_Latn"
+  },
+  "random_seed": 20260802,
+  "software_versions": {
+    "python": "3.12.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "sentence-transformers": "5.1.1"
+  },
+  "git_commit": "adbceb4cafbb6857cee98077f12073324fd9857a",
+  "git_dirty": true,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "machine": "AMD64",
+    "logical_cores": 6,
+    "python_executable": "D:\\python\\python.exe"
+  },
+  "started_at": "2026-08-02T02:40:30+00:00",
+  "finished_at": "2026-08-02T03:30:46+00:00",
+  "wall_clock_s": 3015.86,
+  "outputs": [
+    {
+      "path": "results/tables/EXP-006_threshold_study.csv",
+      "sha256": "46c0140ec7e653ff3dd243beba52b29c602b336c6780c8467a2e60eed1301644",
+      "bytes": 1295320
+    },
+    {
+      "path": "experiments/runs/EXP-006/per_example_scores.parquet",
+      "sha256": "7d2d7b99b385cf4007c3cc5ee79b561fd8237d96c732dfff76c70b5f661ae055",
+      "bytes": 761952
+    },
+    {
+      "path": "experiments/runs/EXP-006/summary.json",
+      "sha256": "7d0940741caefde441940b2d9c453a2de006ac155d32742c2dd2b1c11a48fa58",
+      "bytes": 4146
+    },
+    {
+      "path": "experiments/runs/EXP-006/embedding_report.json",
+      "sha256": "da4495081a30a319f9120bf6a3c346de9a4e028b7b48d0617cc2704a9277ac23",
+      "bytes": 13340
+    },
+    {
+      "path": "data/processed/split_manifest_sib200.json",
+      "sha256": "89044fd113cf69ccf56750c778b1c1e071de1fdba88f37a7f9023e97619efe29",
+      "bytes": 50070
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "174 languages, FPR budget 0.05. Source-tuned global threshold violates the budget in 31.8% of target languages (median FPR 0.0372, max 0.1271)."
+}

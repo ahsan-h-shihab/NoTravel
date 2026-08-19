@@ -1,0 +1,53 @@
+{
+  "captured_at_utc": "2026-08-02T00:33:38+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26200",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+    "logical_cores": 6
+  },
+  "python": {
+    "version": "3.12.1",
+    "implementation": "CPython",
+    "executable": "D:\\python\\python.exe"
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "pyarrow": "24.0.0",
+    "scikit-learn": "1.4.2",
+    "statsmodels": "0.14.6",
+    "torch": "2.10.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "datasets": "5.0.0",
+    "huggingface-hub": "0.35.3",
+    "sentence-transformers": "5.1.1",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "nltk": "3.9.2",
+    "tqdm": "4.67.3"
+  },
+  "torch": {
+    "available": true,
+    "version": "2.10.0+cpu",
+    "cuda_available": false,
+    "num_threads": 6,
+    "num_interop_threads": 6
+  },
+  "thread_env": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null,
+    "TOKENIZERS_PARALLELISM": null
+  },
+  "git": {
+    "commit": null,
+    "branch": null,
+    "dirty": true
+  }
+}
