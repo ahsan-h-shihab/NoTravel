@@ -6,6 +6,7 @@ abstract: >-
   pipeline that produce every reported number, table, figure and statistical
   test in the paper.
 type: software
+license: Apache-2.0
 authors:
   - given-names: "Ahsan Habib"
     family-names: "Shihab"

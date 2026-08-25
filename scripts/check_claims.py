@@ -185,7 +185,9 @@ def run_audit() -> Audit:
     A.numeric("A-02", "headline", body,
               r"median realised false-positive rate is \$([\d.]+)\$", float(sg.fpr.median()), ev2)
     A.numeric("A-03", "headline", body,
-              r"or\s+\$\\mathbf\{([\d.]+)\\times\}\$ the configured budget",
+              # Markup-agnostic, as K-02: the bold wrapper was removed from the prose
+              # on editorial instruction and the audited value is unchanged.
+              r"or\s+\$(?:\\mathbf\{)?([\d.]+)\\times\}?\$ the configured budget",
               float(sg.fpr.median() / BUDGET), ev2)
     A.numeric("A-04", "headline", body,
               r"the maximum is \$([\d.]+)\$ in Tatar", float(sg.fpr.max()), ev2,
@@ -344,7 +346,7 @@ def run_audit() -> Audit:
               [_median_dtau("EXP-008-citizenlab_arm_a.csv"),
                _median_dtau("EXP-009_arm_a.csv")], eva)
     A.numeric("E-04", "arm-a", body,
-              r"median\s+recall collapses from \$([\d.]+)\$ in English to \$\\mathbf\{([\d.]+)\}\$",
+              r"median\s+recall collapses from \$([\d.]+)\$ in English to \$(?:\\mathbf\{)?([\d.]+)\}?\$",
               [db["source_recall"], db["median_recall"]], eva)
     A.numeric("E-05", "arm-a", body,
               r"raise median recall from \$([\d.]+)\$ to \$([\d.]+)\$",
@@ -359,7 +361,7 @@ def run_audit() -> Audit:
               note="raw-rate ratio; deriving it from the rounded table multiples gives "
                    f"{cc['widest_ratio_from_rounded_multiples']}")
     A.numeric("E-08", "arm-a", body,
-              r"Amharic runs at \$\\mathbf\{([\d.]+)\\times\}\$", cc["widest_multiple_xlmr"], eva)
+              r"Amharic runs at \$(?:\\mathbf\{)?([\d.]+)\\times\}?\$", cc["widest_multiple_xlmr"], eva)
     A.numeric("E-09", "arm-a", body,
               r"AUROC \$([\d.]+)\$,\s*recall \$([\d.]+)\$\)", [xl["source_auroc"], xl["source_recall"]], eva)
     A.numeric("E-10", "arm-a", body,

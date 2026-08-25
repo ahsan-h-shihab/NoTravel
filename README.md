@@ -66,7 +66,16 @@ result can be re-derived independently of this analysis code.
 
 Datasets and models are referenced by pinned revision and downloaded at run time; none is
 redistributed here. Sources and exact terms: [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
-No repository licence has been chosen yet, so default copyright currently applies.
+
+## Licence
+
+This repository is not uniformly licensed. The original code — `scripts/`, `src/`, `tests/`,
+`configs/`, `environment/` and the root documentation — is under the Apache License 2.0
+([`LICENSE`](LICENSE)). The derived result artefacts under `experiments/` and `results/`
+carry no corpus text but are computed from corpora under CC-BY-SA-4.0 and OpenRAIL++, so
+they remain subject to those upstream terms and the Apache-2.0 grant does not extend to
+them. Scope, per directory, and the verified upstream licences:
+[`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).
 
 ## Citation
 

@@ -106,12 +106,15 @@ def main() -> int:
             # experiment, so an 18-observation test would be anti-conservative. The clustered
             # figure is reported in the body instead.
             r"Spearman $\rho = -0.823$ across all 18 rows, which are not independent; see "
-            r"Section~\ref{sec:negatives} for the clustered estimate.}",
+            r"Section~\ref{sec:negatives} for the clustered estimate. "
+            r"$\overline{n}_{\mathrm{neg}}$ is the mean negative count over languages, shown "
+            r"rounded; $m = \alpha \overline{n}_{\mathrm{neg}}$ uses the unrounded mean, so "
+            r"recomputing it from the printed integer will differ slightly.}",
             r"\label{tab:regimes}",
             r"\begin{adjustbox}{max width=\columnwidth}",
             r"\begin{tabular}{llrrrr}",
             r"\toprule",
-            r"Regime & Source & $\alpha$ & $n_{\mathrm{neg}}$ & $m$ & Violation \\",
+            r"Regime & Source & $\alpha$ & $\overline{n}_{\mathrm{neg}}$ & $m$ & Violation \\",
             r"\midrule",
         ]
         for _, r in df.iterrows():

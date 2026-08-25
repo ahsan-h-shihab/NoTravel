@@ -139,7 +139,9 @@ def fig1_threshold_divergence(manifest: list[dict]) -> None:
             "single threshold tuned on the English source language (dashed line). Thresholds "
             f"diverge substantially: over the 14 target languages the median absolute "
             f"difference is {median_diff:.3f} on a [0,1] score scale, reaching {max_diff:.3f} "
-            f"for {max_lang}. These are the same per-language thresholds tabulated in the "
+            f"for {max_lang}. Differences are computed on unrounded thresholds, so they can "
+            f"differ by 0.001 from a subtraction of the rounded values printed in the table. "
+            f"These are the same per-language thresholds tabulated in the "
             "per-language operating-point table."),
     })
 

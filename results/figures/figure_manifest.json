@@ -6,7 +6,7 @@
     "exports": [
       "results/figures/fig1_threshold_divergence.pdf"
     ],
-    "caption": "Per-language calibrated decision thresholds for a fixed multilingual classifier, each selected to meet a 0.05 false-positive budget on that language, against the single threshold tuned on the English source language (dashed line). Thresholds diverge substantially: over the 14 target languages the median absolute difference is 0.260 on a [0,1] score scale, reaching 0.361 for Hebrew. These are the same per-language thresholds tabulated in the per-language operating-point table."
+    "caption": "Per-language calibrated decision thresholds for a fixed multilingual classifier, each selected to meet a 0.05 false-positive budget on that language, against the single threshold tuned on the English source language (dashed line). Thresholds diverge substantially: over the 14 target languages the median absolute difference is 0.260 on a [0,1] score scale, reaching 0.361 for Hebrew. Differences are computed on unrounded thresholds, so they can differ by 0.001 from a subtraction of the rounded values printed in the table. These are the same per-language thresholds tabulated in the per-language operating-point table."
   },
   {
     "figure": "fig2b_strategy_tradeoff",

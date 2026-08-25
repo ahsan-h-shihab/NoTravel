@@ -67,13 +67,8 @@ manuscript directory and are therefore not distributed.
 Everything in this repository was authored for this project: `scripts/`, `src/`, `tests/`,
 `configs/`, `environment/`, and all generated artefacts under `results/` and `experiments/`.
 
-A repository licence has **not** been chosen. The proposed boundary, for decision:
-
-- **Code** — `scripts/`, `src/`, `tests/`, `configs/`, `analysis/`: a permissive licence
-  (Apache-2.0 or MIT).
-- **Result artefacts** — `results/`, `experiments/`: CC-BY-4.0 is the usual choice for this
-  venue.
-- **Third-party material** — everything in this file: unchanged, under its own terms, never
-  covered by ours.
-
-Until a licence file exists, default copyright applies and no reuse rights are granted.
+The original code is licensed under the Apache License 2.0; see [`LICENSE`](LICENSE). The
+grant is scoped: it covers `scripts/`, `src/`, `tests/`, `configs/`, `environment/` and the
+root documentation, and does not extend to the derived result artefacts under
+`experiments/` and `results/`, which remain subject to the upstream corpus terms.
+[`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md) states the boundary per directory.
