@@ -89,6 +89,47 @@ def test_auroc_vs_gap_figure(tmp_path):
     assert all(p.exists() for p in F.fig_auroc_vs_gap(df, "a2", tmp_path))
 
 
+def test_auroc_vs_gap_label_offsets_separate_near_identical_points(monkeypatch, tmp_path):
+    """Two languages that score almost identically must be able to have readable labels.
+
+    In the real data fr and ru differ by 0.003 AUROC and 0.0005 F1, so the default label
+    offset prints both on top of each other and reads "fru". `label_offsets` moves a text
+    label and nothing else; this pins both halves of that contract.
+    """
+    import matplotlib.pyplot as plt
+
+    df = pd.DataFrame({"language": ["fr", "ru", "en"],
+                       "test_auroc": [0.9034, 0.9061, 0.60],
+                       "f1_gap": [-0.0005, 0.0, 0.20],
+                       "tier": ["high", "mid", "low"]})
+    grabbed = {}
+    monkeypatch.setattr(F, "_save", lambda fig, name, out_dir=None: grabbed.setdefault("fig", fig) and [])
+
+    def label_boxes(**kw):
+        plt.close("all")
+        F.fig_auroc_vs_gap(df, "x", tmp_path, tier_col="tier", **kw)
+        fig = grabbed.pop("fig")
+        fig.canvas.draw()
+        r = fig.canvas.get_renderer()
+        ax = fig.axes[0]
+        boxes = {t.get_text(): t.get_window_extent(r) for t in ax.texts}
+        offsets = {t.get_text(): t.xyann for t in ax.texts}
+        data = [(np.asarray(c.get_offsets())).tolist() for c in ax.collections]
+        return boxes, offsets, data
+
+    def overlap(a, b):
+        return not (a.x1 <= b.x0 or b.x1 <= a.x0 or a.y1 <= b.y0 or b.y1 <= a.y0)
+
+    default_boxes, default_off, default_data = label_boxes()
+    fixed_boxes, fixed_off, fixed_data = label_boxes(label_offsets={"fr": (-7, 5), "ru": (3, -6)})
+
+    assert overlap(default_boxes["fr"], default_boxes["ru"]), "premise: default offsets collide"
+    assert not overlap(fixed_boxes["fr"], fixed_boxes["ru"]), "offsets must separate the labels"
+    assert fixed_off["fr"] == (-7, 5) and fixed_off["ru"] == (3, -6)
+    assert fixed_off["en"] == default_off["en"] == (3, 2), "unlisted languages keep the default"
+    assert fixed_data == default_data, "moving a label must not move any plotted point"
+
+
 def test_single_language_does_not_crash(tmp_path):
     """Degenerate input appears in per-encoder subsets; it must degrade, not explode."""
     df = pd.DataFrame({"language": ["en"], "tau_language": [0.5], "tau_source": [0.47]})

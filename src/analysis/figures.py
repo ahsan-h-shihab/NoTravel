@@ -301,7 +301,8 @@ def fig_label_efficiency(df: pd.DataFrame, name: str = "fig_label_efficiency",
 
 
 def fig_auroc_vs_gap(df: pd.DataFrame, name: str = "fig_auroc_vs_gap",
-                     out_dir: Path | None = None, tier_col: str | None = None) -> list[Path]:
+                     out_dir: Path | None = None, tier_col: str | None = None,
+                     label_offsets: dict[str, tuple[float, float]] | None = None) -> list[Path]:
     """Threshold-free model quality (AUROC) against the operating-point loss.
 
     FORM: relationship between two continuous measures -> scatter. This figure carries the
@@ -311,6 +312,11 @@ def fig_auroc_vs_gap(df: pd.DataFrame, name: str = "fig_auroc_vs_gap",
 
     Uses at most three tier colors (validated all-pairs) plus distinct markers; each point is
     directly labelled with its language, satisfying the relief rule for the low-contrast slot.
+
+    `label_offsets` maps a language to its own label offset in points, replacing the default
+    (3, 2) for that language only. It moves a text label and nothing else: no marker, value,
+    axis or limit depends on it. It exists because two languages can score almost identically
+    on both axes, in which case identical offsets print their labels on top of each other.
     """
     apply_style()
     fig, ax = plt.subplots(figsize=(WIDTH_1COL, 2.7))
@@ -325,9 +331,12 @@ def fig_auroc_vs_gap(df: pd.DataFrame, name: str = "fig_auroc_vs_gap",
         ax.scatter(df["test_auroc"], df["f1_gap"], s=26, color=SERIES[0],
                    edgecolor=SURFACE, linewidth=0.6, zorder=3)
 
+    offsets = label_offsets or {}
     for _, r in df.iterrows():
-        ax.annotate(str(r["language"]), xy=(r["test_auroc"], r["f1_gap"]),
-                    xytext=(3, 2), textcoords="offset points",
+        lang = str(r["language"])
+        dx, dy = offsets.get(lang, (3, 2))
+        ax.annotate(lang, xy=(r["test_auroc"], r["f1_gap"]),
+                    xytext=(dx, dy), textcoords="offset points",
                     fontsize=5.8, color=INK_SECONDARY)
 
     ax.axhline(0.0, color=AXIS, lw=0.7)

@@ -183,7 +183,13 @@ STAGES: list[Stage] = [
         name="manuscript_figures",
         description="Copy figures into the manuscript and emit their LaTeX floats + captions.",
         command=[PYTHON, "scripts/sync_manuscript_figures.py"],
-        produces=["manuscript/sections/figures.tex"],
+        # Figures in the script's INLINE set get their own file so the float can be declared
+        # beside the paragraph that discusses it; the rest stay in the trailing figures.tex.
+        produces=[
+            "manuscript/sections/figures.tex",
+            "manuscript/sections/fig_divergence.tex",
+            "manuscript/sections/fig_tradeoff.tex",
+        ],
         manuscript_local=True,
     ),
     Stage(

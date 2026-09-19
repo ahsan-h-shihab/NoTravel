@@ -251,7 +251,13 @@ def fig4_auroc_vs_gap(manifest: list[dict]) -> None:
     d["tier"] = d["language"].map(RESOURCE_TIER).fillna("mid")
 
     rho, _ = spearmanr(d["test_auroc"], d["f1_gap"])
-    paths = F.fig_auroc_vs_gap(d, "fig4_auroc_vs_gap", FIGURES, tier_col="tier")
+    # fr and ru score almost identically on both axes (AUROC 0.9034 vs 0.9061, F1 gain -0.0005
+    # vs 0.0000), so with the default label offset their text prints on top of itself and reads
+    # "fru". Each label is moved to the opposite side of its own marker; the data are untouched.
+    # ru keeps the default horizontal offset (3) because it is the right-most artist and the
+    # export crops tightly: any larger dx widens the saved page and rescales the figure.
+    paths = F.fig_auroc_vs_gap(d, "fig4_auroc_vs_gap", FIGURES, tier_col="tier",
+                               label_offsets={"fr": (-7, 5), "ru": (3, -6)})
     manifest.append({
         "figure": "fig4_auroc_vs_gap",
         "source_data": str(src.relative_to(REPO_ROOT)).replace("\\", "/"),

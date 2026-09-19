@@ -37,7 +37,9 @@ preferred-citation:
   title: >-
     The Operating Point Does Not Travel: Cross-Lingual Threshold Transfer Fails
     by Over- and Under-Firing in Multilingual Text Classifiers
-  journal: "IEEE Access"
+  journal: "Computers, Materials & Continua"
+  issn: "1546-2226"
+  status: submitted
   year: 2026
   authors:
     - given-names: "Ahsan Habib"

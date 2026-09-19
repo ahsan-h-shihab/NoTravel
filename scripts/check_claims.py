@@ -124,8 +124,17 @@ def agrees(printed: str, truth: float) -> bool:
 
 
 def captured(body: str, pattern: str) -> list[str] | None:
+    """Return the captured value(s), or None if the pattern did not match.
+
+    Groups that did not participate in the match are dropped. That lets one pattern offer
+    several equivalent phrasings of the same claim as alternatives, each with its own
+    capturing group, without changing how many values the caller must supply. No pattern
+    in this file has an optional group for any other reason -- every check currently
+    captures exactly as many values as its artifact supplies -- so discarding unmatched
+    groups cannot change the result of an existing check.
+    """
     m = re.search(pattern, body)
-    return list(m.groups()) if m else None
+    return [g for g in m.groups() if g is not None] if m else None
 
 
 # ----------------------------------------------------------------- the audit harness
@@ -212,8 +221,16 @@ def run_audit() -> Audit:
     # threshold divergence: the correction a deployer with target labels would apply
     tf2 = base[base.strategy == "target_full"]
     dtau2 = float((tf2.threshold - tf2.tau_source).abs().median())
+    # Two phrasings of the same claim are accepted, because the claim is made in two places
+    # and the compressed edition keeps only the second. Both assert that the controlled
+    # arm's median threshold divergence is the value below, measured the same way:
+    #   "... at closely matched magnitude in the controlled arm (median $|\Delta\tau| = X$)"
+    #   "... $0.270$ and $0.163$ in the two deployed classifiers, against $X$ in the
+    #    controlled arm, all three measured the same way"
+    # The value checked is unchanged; only the wording the check will recognise is wider.
     A.numeric("A-12", "headline", body,
-              r"controlled arm \(median \$\|\\Delta\\tau\| = ([\d.]+)\$\)", dtau2, ev2)
+              r"controlled arm \(median \$\|\\Delta\\tau\| = ([\d.]+)\$\)"
+              r"|against \$([\d.]+)\$ in the controlled arm", dtau2, ev2)
 
     # ---------------------------------------------------------- B. remedies, paired tests
     paired = load_json(TABLES / "paired_comparisons.json")
@@ -455,7 +472,14 @@ def run_audit() -> Audit:
             "no manuscript figure is sourced from EXP-001 and EXP-001 is not named in the prose "
             "(D-018)" + (f"; offenders: {exp001}" if exp001 else ""))
     # Every figure in the manifest is included and referenced; every float label referenced.
-    figtex = section_text("figures.tex")
+    # The float blocks live in figures.tex plus one fig_<name>.tex per figure that is declared
+    # beside the paragraph discussing it (scripts/sync_manuscript_figures.py, INLINE set), so
+    # the search spans all of them. Scoped to figures.tex alone this reported a figure as
+    # missing from the manuscript purely because its float block had moved to its own file,
+    # which is a location change and not an omission. The check is otherwise unchanged: the
+    # figure must still appear in a figure-float file, not merely somewhere in the prose.
+    figtex = " ".join([section_text("figures.tex")]
+                      + [section_text(p.name) for p in sorted(SECTIONS.glob("fig_*.tex"))])
     missing_inc = [f["figure"] for f in fman if f["figure"] not in figtex]
     A.check("I-03", "attribution", not missing_inc, evf,
             "every manifest figure is included in the manuscript"
@@ -480,7 +504,16 @@ def run_audit() -> Audit:
     A.check("J-01", "consistency", not miss, "manuscript sections",
             "the n=2 scope statement appears in Introduction, Results and Conclusion"
             + (f"; missing in {miss}" if miss else ""))
-    A.check("J-02", "consistency", "not its distribution over models" in body, "manuscript",
+    # The distributional claim must be disclaimed somewhere, but not in one fixed wording.
+    # Each form below says the same thing: two systems establish that the direction is
+    # model-dependent, and do not characterise how that direction is distributed over
+    # models. The check is satisfied by any of them, and still fails if none is present.
+    DIST_DISCLAIMERS = (
+        "not its distribution over models",
+        "not enough to characterise its distribution over models",
+        "do not characterise how it is distributed over models",
+    )
+    A.check("J-02", "consistency", any(p in body for p in DIST_DISCLAIMERS), "manuscript",
             "the distributional claim is explicitly disclaimed")
     # Acronyms defined in prose, including ones that otherwise appear only in generated tables.
     for cid, acr, defn in (("J-03", "ECE", "expected calibration error"),
