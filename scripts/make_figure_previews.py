@@ -5,7 +5,7 @@ only reads them and writes raster copies to results/figures/previews/, so the RE
 them inline on GitHub (which does not render PDFs inside Markdown). The previews are pure
 rasterisations: nothing is redrawn, re-styled, cropped or re-plotted.
 
-Only the three figures the README shows are produced. Regenerating the figures with
+Only the figures the README shows are produced. Regenerating the figures with
 scripts/make_figures.py does not touch the previews; rerun this script afterwards.
 
 Rasteriser: PyMuPDF if it is installed, otherwise Poppler's `pdftoppm`. Neither is needed for
@@ -25,11 +25,14 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 SRC = REPO_ROOT / "results" / "figures"
 DEST = SRC / "previews"
 
-#: The three figures with the most information per pixel. Figures 3 and 4 stay PDF-only.
+#: Figures 1, 2 and 5 are the main README figures; Figures 3 and 4 are its compact
+#: "supporting figures" row.
 PREVIEWS = [
     "fig1_threshold_divergence",
     "fig2b_strategy_tradeoff",
     "fig5_degeneracy_vs_prevalence",
+    "fig3_label_efficiency",
+    "fig4_auroc_vs_gap",
 ]
 
 #: Chosen so the narrowest figure (a single IEEE column, ~216 pt) still yields ~900 px.
