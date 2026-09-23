@@ -142,10 +142,12 @@ def fig_threshold_divergence(df: pd.DataFrame, name: str = "fig_threshold_diverg
     ax.grid(axis="y", visible=False)
     ax.grid(axis="x", visible=True)
 
-    # Direct label on the reference line rather than a legend entry. Anchored BELOW the
-    # bottom row so it cannot collide with a data point, whichever language ranks first.
+    # Direct label on the reference line rather than a legend entry. It sits in the bottom
+    # row's band, clear of the x-axis, and is offset 10pt to the right of the dashed line so
+    # it also clears a marker on the line itself (the source language is one). Anchored at
+    # y = -0.62 with a 4pt offset it overlapped the axis: its box extended 2pt below it.
     ax.annotate(f"source threshold ({tau_source:.2f})",
-                xy=(tau_source, -0.62), xytext=(4, 0), textcoords="offset points",
+                xy=(tau_source, -0.18), xytext=(10, 0), textcoords="offset points",
                 fontsize=6.5, color=INK_SECONDARY, va="center", ha="left")
     return _save(fig, name, out_dir)
 
