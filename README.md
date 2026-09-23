@@ -11,30 +11,24 @@ CPU-only; no GPU, no LaTeX, no paid API.
 A multilingual classifier is usually deployed behind one decision threshold, chosen on
 validation data from one language and applied to all. This study asks whether an operating
 point configured that way survives a change of language, with the model held fixed and only
-the threshold varying.
+the threshold varying. The answer runs through five figures.
 
-- **The operating point does not transfer.** With a false-positive budget of 0.05 configured
-  on English, all 14 target languages exceeded it: median realised false-positive rate 0.173
-  (3.5x the budget), worst case 0.491 in Tatar.
-- **The failure is not a content effect.** Each language's own optimal threshold sits a
-  median 0.260 from the source-tuned one, and the divergence persists on a parallel corpus
-  where every language carries translations of the same sentences with the same labels.
-- **The direction of the harm is model-dependent.** Two deployed classifiers fail in opposite
-  directions and disagree on the sign of the error in 8 of 14 languages: the
-  XLM-RoBERTa-based classifier over-fires (median 1.83x its budget), while the
-  DistilBERT-based one mostly under-fires (median 0.33x its budget) and its median recall
-  falls from 0.729 on English to 0.047. Two systems establish model-dependence, not its
-  distribution over models.
-- **No remedy is both cheap and compliant.** Pooling the other languages cuts the violation
-  rate from 1.000 to 0.286; the only threshold that never violates the budget cuts median
-  recall from 0.504 to 0.071. Label-free adaptation did not achieve compliance.
-- **The binding resource is target-language negatives, not labels.** Locating a
-  false-positive quantile is limited by the expected number of permitted false positives,
-  `m = alpha * n_neg`. The rule of thumb `m >= 10` is an in-sample summary of the regimes
-  reported here and has not been validated on an independent corpus.
-- **F1 on class-balanced corpora misleads.** At 50/50 balance the F1-optimal per-language
-  threshold degenerates in 6 of 14 languages (Figure 5); the artefact disappears at
-  deployment-realistic prevalence.
+### 1. The threshold does not travel
+
+<p align="center">
+  <img src="results/figures/previews/fig1_threshold_divergence.png" width="52%"
+       alt="Per-language calibrated decision thresholds compared with the single English-tuned threshold.">
+  <br>
+  <sub><b>Figure 1.</b> Per-language thresholds that meet a 0.05 false-positive budget,
+  against the single English-tuned threshold (dashed). Median absolute difference 0.260;
+  largest 0.361 (Hebrew).</sub>
+</p>
+
+Each language's own optimal threshold sits well away from the one tuned on English. The
+divergence persists on a parallel corpus where every language carries translations of the same
+sentences with the same labels, so it is not a content effect.
+
+### 2. Compliance is traded against recall
 
 <p align="center">
   <img src="results/figures/previews/fig2b_strategy_tradeoff.png" width="88%"
@@ -46,44 +40,67 @@ the threshold varying.
   barely firing.</sub>
 </p>
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="results/figures/previews/fig1_threshold_divergence.png" width="100%"
-           alt="Per-language calibrated decision thresholds compared with the single English-tuned threshold.">
-      <br>
-      <sub><b>Figure 1.</b> Per-language thresholds that meet a 0.05 false-positive budget,
-      against the single English-tuned threshold (dashed). Median absolute difference 0.260;
-      largest 0.361 (Hebrew).</sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="results/figures/previews/fig5_degeneracy_vs_prevalence.png" width="100%"
-           alt="Number of languages with a degenerate F1-optimal threshold as positive-class prevalence increases.">
-      <br>
-      <sub><b>Figure 5.</b> Languages whose F1-optimal threshold is degenerate (flags over 80%
-      of text) by positive-class prevalence: none at low prevalence, 6 of 14 at 50/50.</sub>
-    </td>
-  </tr>
-</table>
+That divergence becomes a compliance failure: the English-tuned threshold overshoots the
+budget in every target language. The fixes that restore compliance do so at a large cost in
+recall, so no remedy here is both cheap and compliant.
 
-**Supporting figures**
+### Key findings
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="results/figures/previews/fig3_label_efficiency.png" width="80%"
-           alt="Fraction of target languages exceeding the false-positive budget as the number of labelled target-language examples grows.">
-      <br>
-      <sub><b>Figure 3.</b> Budget violations fall from 1.000 at k &le; 16 to 0.429 at k = 32 labelled examples.</sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="results/figures/previews/fig4_auroc_vs_gap.png" width="80%"
-           alt="Scatter of test AUROC against the F1 gained by per-language calibration for 14 target languages, coloured by resource tier.">
-      <br>
-      <sub><b>Figure 4.</b> F1 gained by per-language calibration is largest where AUROC is lowest (Spearman &minus;0.701).</sub>
-    </td>
-  </tr>
-</table>
+| Finding | Value |
+|---|---|
+| Target languages exceeding the 0.05 budget under the English-tuned threshold | 14 of 14 |
+| Median realised false-positive rate | 0.173 (3.5x the budget); worst case 0.491 (Tatar) |
+| Median absolute threshold divergence | 0.260 |
+| Pooling the other languages: violation rate | 1.000 to 0.286 |
+| Global threshold that never violates the budget: median recall | 0.504 to 0.071 |
+| Deployed classifiers disagreeing on the sign of the error | 8 of 14 languages |
+| XLM-RoBERTa-based classifier: median realised rate | 1.83x its budget |
+| DistilBERT-based classifier: median realised rate; median recall | 0.33x its budget; 0.729 (English) to 0.047 |
+| Languages with a degenerate F1-optimal threshold at 50/50 balance | 6 of 14 |
+
+Two deployed systems establish that the direction of the harm is model-dependent, not its
+distribution over models. Label-free adaptation did not achieve compliance.
+
+### 3. The binding resource is target-language negatives
+
+<p align="center">
+  <img src="results/figures/previews/fig3_label_efficiency.png" width="62%"
+       alt="Fraction of target languages exceeding the false-positive budget as the number of labelled target-language examples grows.">
+  <br>
+  <sub><b>Figure 3.</b> Budget violations fall from 1.000 at k &le; 16 to 0.429 at k = 32 labelled examples.</sub>
+</p>
+
+Few-label calibration only becomes usable near k = 32, and what limits it is the number of
+target-language negatives rather than labels: locating a false-positive quantile is limited by
+`m = alpha * n_neg`. The rule of thumb `m >= 10` is an in-sample summary of the regimes reported
+here and has not been validated on an independent corpus.
+
+### 4. Balanced-corpus F1 flatters calibration
+
+<p align="center">
+  <img src="results/figures/previews/fig4_auroc_vs_gap.png" width="62%"
+       alt="Scatter of test AUROC against the F1 gained by per-language calibration for 14 target languages, coloured by resource tier.">
+  <br>
+  <sub><b>Figure 4.</b> F1 gained by per-language calibration is largest where AUROC is lowest (Spearman &minus;0.701).</sub>
+</p>
+
+On a 50/50 corpus, per-language calibration appears to gain a median +0.053 F1. The gain is
+concentrated in the languages where the model carries least signal, and there the F1-optimal
+threshold degenerates toward flagging most of the text.
+
+### 5. The artefact vanishes at realistic prevalence
+
+<p align="center">
+  <img src="results/figures/previews/fig5_degeneracy_vs_prevalence.png" width="62%"
+       alt="Number of languages with a degenerate F1-optimal threshold as positive-class prevalence increases.">
+  <br>
+  <sub><b>Figure 5.</b> Languages whose F1-optimal threshold is degenerate (flags over 80%
+  of text) by positive-class prevalence: none at low prevalence, 6 of 14 at 50/50.</sub>
+</p>
+
+At deployment-realistic prevalence the degeneracy and the apparent benefit (+0.006 F1) both
+disappear, so the operating point has to be measured per language at the budget and prevalence
+that matter.
 
 The publication-quality PDFs of all five figures are in
 [`results/figures/`](results/figures/). The PNGs above are raster previews of those PDFs,
