@@ -1,7 +1,7 @@
 # NoTravel: Cross-Lingual Threshold Transfer in Multilingual AI
 
-Reproduction artifact for *"The Operating Point Does Not Travel: Cross-Lingual Threshold
-Transfer Fails by Over- and Under-Firing in Multilingual Text Classifiers"* (submitted to
+Reproduction artifact for *"Source-Language Thresholds Do Not Transfer: Over- and
+Under-Firing in Multilingual Text Classifiers"* (submitted to
 *Computers, Materials & Continua*, CMC).
 
 CPU-only; no GPU, no LaTeX, no paid API.

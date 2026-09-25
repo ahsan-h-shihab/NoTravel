@@ -35,8 +35,8 @@ authors:
 preferred-citation:
   type: article
   title: >-
-    The Operating Point Does Not Travel: Cross-Lingual Threshold Transfer Fails
-    by Over- and Under-Firing in Multilingual Text Classifiers
+    Source-Language Thresholds Do Not Transfer: Over- and
+    Under-Firing in Multilingual Text Classifiers
   journal: "Computers, Materials & Continua"
   issn: "1546-2226"
   status: submitted
